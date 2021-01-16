@@ -17,7 +17,7 @@
 int nv,            // number of vertices
     *notdone,      // vertices not checked yet
     nth,           // number of threads
-    chunk,         // number of vertices handled by each thread
+    
     md,            // current min over all threads
     mv,            // vertex which achieves that min
     largeint = -1; // max possible unsigned int
@@ -30,7 +30,7 @@ void init(int ac, char **av)
 {
     omp_set_num_threads(1);
     srand(2);
-    long i, j, tmp;
+    int i, j, tmp;
     nv = atoi(av[1]);
     ohd = malloc(nv * nv * sizeof(int));
     mind = malloc(nv * sizeof(int));
@@ -63,7 +63,7 @@ void dowork()
 
 #pragma omp parallel
     {
-        long step, // whole procedure goes nv steps
+        int step, // whole procedure goes nv steps
             mymv;  // vertex which attains that value
 
         unsigned mymd; // min value found by this thread
@@ -79,7 +79,7 @@ void dowork()
             }
             mymd = largeint;
 #pragma omp for nowait
-            for (long i = 1; i < nv; i++)
+            for (int i = 1; i < nv; i++)
             {
                 if (notdone[i] && mind[i] < mymd)
                 {
@@ -104,7 +104,7 @@ void dowork()
             }
 // now update ohd
 #pragma omp for
-            for (long i = 1; i < nv; i++)
+            for (int i = 1; i < nv; i++)
                 if (mind[mv] + ohd[mv * nv + i] < mind[i])
                     mind[i] = mind[mv] + ohd[mv * nv + i];
         }
