@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 JAN 2021 21:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 JAN 2021 21:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -155,4 +155,95 @@ Package pdftex.def Info: ./imagenes/grafos1.jpg  used on input line 112.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
  [6]
 <./imagenes/grafos2.jpg, id=32, 498.60226pt x 449.41008pt>
-File: ./imagene
+File: ./imagenes/grafos2.jpg Graphic file (type jpg)
+<use ./imagenes/grafos2.jpg>
+Package pdftex.def Info: ./imagenes/grafos2.jpg  used on input line 118.
+(pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
+<./imagenes/grafos3.jpg, id=33, 498.60226pt x 449.41008pt>
+File: ./imagenes/grafos3.jpg Graphic file (type jpg)
+<use ./imagenes/grafos3.jpg>
+Package pdftex.def Info: ./imagenes/grafos3.jpg  used on input line 125.
+(pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
+<./imagenes/grafos5.jpg, id=34, 498.60226pt x 449.41008pt>
+File: ./imagenes/grafos5.jpg Graphic file (type jpg)
+<use ./imagenes/grafos5.jpg>
+Package pdftex.def Info: ./imagenes/grafos5.jpg  used on input line 131.
+(pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
+ [7 </Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/./imagenes/grafos1.jpg>] [8 </Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/./imagenes/grafos2.jpg> </Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/./imagenes/grafos3.jpg>] [9 </Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/./imagenes/grafos5.jpg>]
+<./imagenes/tiempo.png, id=45, 947.54pt x 405.515pt>
+File: ./imagenes/tiempo.png Graphic file (type png)
+<use ./imagenes/tiempo.png>
+Package pdftex.def Info: ./imagenes/tiempo.png  used on input line 158.
+(pdftex.def)             Requested size: 473.76883pt x 202.75699pt.
+
+Overfull \hbox (113.76883pt too wide) in paragraph at lines 158--159
+ [][] 
+ []
+
+[10 </Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/./imagenes/tiempo.png>]
+<./imagenes/speedup.png, id=51, 951.555pt x 196.735pt>
+File: ./imagenes/speedup.png Graphic file (type png)
+<use ./imagenes/speedup.png>
+Package pdftex.def Info: ./imagenes/speedup.png  used on input line 171.
+(pdftex.def)             Requested size: 475.77634pt x 98.36725pt.
+
+Overfull \hbox (115.77634pt too wide) in paragraph at lines 171--172
+ [][] 
+ []
+
+<./imagenes/eficiencia.png, id=52, 948.54375pt x 192.72pt>
+File: ./imagenes/eficiencia.png Graphic file (type png)
+<use ./imagenes/eficiencia.png>
+Package pdftex.def Info: ./imagenes/eficiencia.png  used on input line 183.
+(pdftex.def)             Requested size: 474.2707pt x 96.35976pt.
+
+Overfull \hbox (114.2707pt too wide) in paragraph at lines 183--184
+ [][] 
+ []
+
+[11 </Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/./imagenes/speedup.png> </Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/./imagenes/eficiencia.png>]
+<./imagenes/fraccion.png, id=58, 952.55875pt x 192.72pt>
+File: ./imagenes/fraccion.png Graphic file (type png)
+<use ./imagenes/fraccion.png>
+Package pdftex.def Info: ./imagenes/fraccion.png  used on input line 195.
+(pdftex.def)             Requested size: 476.27821pt x 96.35976pt.
+
+Overfull \hbox (116.27821pt too wide) in paragraph at lines 195--196
+ [][] 
+ []
+
+[12 </Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/./imagenes/fraccion.png>]
+<./imagenes/hil1v4.png, id=63, 1044.90375pt x 647.41875pt>
+File: ./imagenes/hil1v4.png Graphic file (type png)
+<use ./imagenes/hil1v4.png>
+Package pdftex.def Info: ./imagenes/hil1v4.png  used on input line 220.
+(pdftex.def)             Requested size: 323.9978pt x 200.74713pt.
+<./imagenes/svp.png, id=64, 901.86937pt x 543.53062pt>
+File: ./imagenes/svp.png Graphic file (type png)
+<use ./imagenes/svp.png>
+Package pdftex.def Info: ./imagenes/svp.png  used on input line 229.
+(pdftex.def)             Requested size: 323.9978pt x 195.26448pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 </Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/./imagenes/hil1v4.png>] [14 </Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/./imagenes/svp.png>] (/Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/Investigacion.aux
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+) ) 
+Here is how much of TeX's memory you used:
+ 2759 strings out of 480608
+ 42559 string characters out of 5903631
+ 291452 words of memory out of 5000000
+ 18628 multiletter control sequences out of 15000+600000
+ 537855 words of font info for 42 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,7n,35p,907b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "/Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/Investigacion.pdf" (14 pages, 681563 bytes).
+PDF statistics:
+ 101 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+
