@@ -1,82 +1,85 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.1.16)  16 JAN 2021 19:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 JAN 2021 21:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Investigacion.tex
 (./Investigacion.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-01-09> xparse <2020-03-03>
-(d:/Programas/texlive/2020/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(d:/Programas/texlive/2020/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count177
-\c@section=\count178
-\c@subsection=\count179
-\c@subsubsection=\count180
-\c@paragraph=\count181
-\c@subparagraph=\count182
-\c@figure=\count183
-\c@table=\count184
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen138
+\bibindent=\dimen134
 )
-(d:/Programas/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/12/16 3.52 The Babel package
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/03/22 3.42 The Babel package
 
-(d:/Programas/texlive/2020/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/12/16 3.52 Babel common definitions
-\babel@savecnt=\count185
-\U@D=\dimen139
-\l@babelnohyphens=\language86
-
-(d:/Programas/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@readstream=\read2
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/03/22 3.42 Babel switching mechanism
 )
-\bbl@dirlevel=\count186
-
-(d:/Programas/texlive/2020/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/03/22 3.42 Babel common definitions
+\babel@savecnt=\count175
+\U@D=\dimen135
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count176
+)
 \es@quottoks=\toks15
-\es@quotdepth=\count187
+\es@quotdepth=\count177
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
-(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen140
-\Gin@req@width=\dimen141
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
 )
-(d:/Programas/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count188
-\l__pdf_internal_box=\box47
-) (./Investigacion.aux
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count178
+\l__pdf_internal_box=\box45
+)
+(./Investigacion.aux
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
 )
 \openout1 = `Investigacion.aux'.
 
@@ -97,26 +100,25 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
 
-(d:/Programas/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count189
-\scratchdimen=\dimen142
-\scratchbox=\box48
-\nofMPsegments=\count190
-\nofMParguments=\count191
+\scratchcounter=\count179
+\scratchdimen=\dimen138
+\scratchbox=\box46
+\nofMPsegments=\count180
+\nofMParguments=\count181
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count192
-\MPscratchDim=\dimen143
-\MPnumerator=\count193
-\makeMPintoPDFobject=\count194
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen139
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
 \everyMPtoPDFconversion=\toks18
-)
-(d:/Programas/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(d:/Programas/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -129,50 +131,93 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 [1
 
-{d:/Programas/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<./imagenes//grafos1.jpg, id=10, 498.60226pt x 449.41008pt>
-File: ./imagenes//grafos1.jpg Graphic file (type jpg)
-<use ./imagenes//grafos1.jpg>
-Package pdftex.def Info: ./imagenes//grafos1.jpg  used on input line 48.
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<./imagenes/grafos1.jpg, id=10, 498.60226pt x 449.41008pt>
+File: ./imagenes/grafos1.jpg Graphic file (type jpg)
+<use ./imagenes/grafos1.jpg>
+Package pdftex.def Info: ./imagenes/grafos1.jpg  used on input line 48.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-<./imagenes//grafos2.jpg, id=11, 498.60226pt x 449.41008pt>
-File: ./imagenes//grafos2.jpg Graphic file (type jpg)
-<use ./imagenes//grafos2.jpg>
-Package pdftex.def Info: ./imagenes//grafos2.jpg  used on input line 54.
+<./imagenes/grafos2.jpg, id=11, 498.60226pt x 449.41008pt>
+File: ./imagenes/grafos2.jpg Graphic file (type jpg)
+<use ./imagenes/grafos2.jpg>
+Package pdftex.def Info: ./imagenes/grafos2.jpg  used on input line 54.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-<./imagenes//grafos3.jpg, id=12, 498.60226pt x 449.41008pt>
-File: ./imagenes//grafos3.jpg Graphic file (type jpg)
-<use ./imagenes//grafos3.jpg>
-Package pdftex.def Info: ./imagenes//grafos3.jpg  used on input line 61.
+<./imagenes/grafos3.jpg, id=12, 498.60226pt x 449.41008pt>
+File: ./imagenes/grafos3.jpg Graphic file (type jpg)
+<use ./imagenes/grafos3.jpg>
+Package pdftex.def Info: ./imagenes/grafos3.jpg  used on input line 61.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-<./imagenes//grafos5.jpg, id=13, 498.60226pt x 449.41008pt>
-File: ./imagenes//grafos5.jpg Graphic file (type jpg)
-<use ./imagenes//grafos5.jpg>
-Package pdftex.def Info: ./imagenes//grafos5.jpg  used on input line 67.
+<./imagenes/grafos5.jpg, id=13, 498.60226pt x 449.41008pt>
+File: ./imagenes/grafos5.jpg Graphic file (type jpg)
+<use ./imagenes/grafos5.jpg>
+Package pdftex.def Info: ./imagenes/grafos5.jpg  used on input line 67.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
 
-[2] [3 <./imagenes//grafos1.jpg> <./imagenes//grafos2.jpg>] [4 <./imagenes//gra
-fos3.jpg> <./imagenes//grafos5.jpg>] (./Investigacion.aux
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
+[2] [3 <./imagenes/grafos1.jpg> <./imagenes/grafos2.jpg>] [4 <./imagenes/grafos
+3.jpg> <./imagenes/grafos5.jpg>]
+<./imagenes/tiempo.png, id=23, 947.54pt x 405.515pt>
+File: ./imagenes/tiempo.png Graphic file (type png)
+<use ./imagenes/tiempo.png>
+Package pdftex.def Info: ./imagenes/tiempo.png  used on input line 94.
+(pdftex.def)             Requested size: 473.76883pt x 202.75699pt.
+
+Overfull \hbox (113.76883pt too wide) in paragraph at lines 94--95
+ [][] 
+ []
+
+<./imagenes/speedup.png, id=25, 951.555pt x 196.735pt>
+File: ./imagenes/speedup.png Graphic file (type png)
+<use ./imagenes/speedup.png>
+Package pdftex.def Info: ./imagenes/speedup.png  used on input line 107.
+(pdftex.def)             Requested size: 475.77634pt x 98.36725pt.
+
+Overfull \hbox (115.77634pt too wide) in paragraph at lines 107--108
+ [][] 
+ []
+
+[5] [6 <./imagenes/tiempo.png> <./imagenes/speedup.png>]
+<./imagenes/eficiencia.png, id=35, 948.54375pt x 192.72pt>
+File: ./imagenes/eficiencia.png Graphic file (type png)
+<use ./imagenes/eficiencia.png>
+Package pdftex.def Info: ./imagenes/eficiencia.png  used on input line 119.
+(pdftex.def)             Requested size: 474.2707pt x 96.35976pt.
+
+Overfull \hbox (114.2707pt too wide) in paragraph at lines 119--120
+ [][] 
+ []
+
+<./imagenes/fraccion.png, id=36, 952.55875pt x 192.72pt>
+File: ./imagenes/fraccion.png Graphic file (type png)
+<use ./imagenes/fraccion.png>
+Package pdftex.def Info: ./imagenes/fraccion.png  used on input line 131.
+(pdftex.def)             Requested size: 476.27821pt x 96.35976pt.
+
+Overfull \hbox (116.27821pt too wide) in paragraph at lines 131--132
+ [][] 
+ []
+
+[7 <./imagenes/eficiencia.png>] [8 <./imagenes/fraccion.png>]
+(./Investigacion.aux
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 2373 strings out of 479304
- 34627 string characters out of 5866263
- 334222 words of memory out of 5000000
- 19583 multiletter control sequences out of 15000+600000
- 407370 words of font info for 40 fonts, out of 8000000 for 9000
+ 2233 strings out of 480608
+ 32265 string characters out of 5903631
+ 283489 words of memory out of 5000000
+ 18143 multiletter control sequences out of 15000+600000
+ 536893 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,7n,74p,580b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-<d:/Programas/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
-pfb><d:/Programas/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><d:/Programas/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><d:/Programas/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
-pfb>
-Output written on Investigacion.pdf (4 pages, 310156 bytes).
+ 30i,7n,35p,580b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on Investigacion.pdf (8 pages, 540491 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -67,4 +67,80 @@ En la siguiente iteración se repite el proceso, solo que esta vez ya estará ma
 \includegraphics[scale = .5]{grafos5}
 \caption{El algoritmo finaliza una vez que se visitó el más lejano.}
 \end{figure}
+
+\section{Paralelización del Algoritmo}
+\subsection{Nivel de paralelismo}
+Muchos algoritmos realizan cálculos atravesando iterativamente una gran estructura de datos por medio de un bucle. Por lo general, un bucle se ejecuta secuencialmente, lo que significa que los cálculos de la i-ésima iteración no se inician antes de que se completen todos los cálculos de la (i - 1) ésima iteración. Este esquema de ejecución se denomina ciclo secuencial.
+\par
+Si no hay dependencias entre las iteraciones de un bucle, las iteraciones se pueden ejecutar en un orden arbitrario y también se pueden ejecutar en paralelo por diferentes procesadores. Entonces, dicho bucle se denomina bucle paralelo.
+\par 
+En el caso del programa del Algoritmo de Dijkstra, cada hilo ejecuta una o más de las iteraciones, es decir, asume la responsabilidad de uno o más valores de i. Es por esto que podemos afirmar que el nivel de paralelismo que se maneja es a nivel de ciclo.
+
+\subsection{Métricas de desempeño}
+El principal propósito de escribir programas paralelos es aumentar el rendimiento con respecto a su contraparte secuencial. Para poder medir esto se establecieron las métricas de desempeño, que proporcionan elementos para decidir si los programas valen la pena o no.
+\par
+El tiempo de procesamiento del programa del Algoritmo de Dijkstra fue tomado en tres distintos procesadores con el mismo grafo para todos los casos. Los procesadores utilizados fueron los siguientes:
+\par
+Procesador 1: Intel i5, 2.50 GHz, 4 núcleos
+\par
+Procesador 2: Intel i5, 1.4 GHz, 4 núcleos
+\par
+Procesador 3: Intel i7, 2 GHz, 8 núcleos
+\par
+Los resultados obtenidos se muestran a continuación:
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale = .5]{tiempo}
+\caption{Para la toma del tiempo se utilizó la función omp\_get\_wtime() de la biblioteca omp.h}
+\end{figure}
+
+\subsubsection{Speedup}
+Para el análisis de programas paralelos, una comparación con el tiempo de ejecución de una implementación secuencial es especialmente importante para ver el beneficio del paralelismo.
+\par
+El speedup de una implementación paralela expresa el ahorro de tiempo de ejecución que se puede obtener utilizando una ejecución paralela en n procesadores en comparación con la mejor implementación secuencial.
+\par
+Para el programa del Algoritmo de Dijkstra se obtuvo lo siguiente:
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale = .5]{speedup}
+\end{figure}
+
+En los tres procesadores se observa que el valor del speedup es menor que la unidad. Esto quiere decir que el algoritmo ejecutado en forma paralela no presenta una mejora en cuanto al tiempo de ejecución, al contrario, hace que el programa se ejecute más lento.
+
+\subsubsection{Eficiencia}
+La eficiencia se define como la medida de la fracción de tiempo en la que cada procesador es usado para resolver el problema en cuestión de forma útil. En otras palabras, refleja el aprovechamiento de los recursos de hardware del sistema.
+\par
+Los cálculos de eficiencias obtenidos fueron los siguientes:
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale = .5]{eficiencia}
+\end{figure}
+
+Si nuestros procesadores se utilizan de forma eficiente se espera que el tiempo de ejecución dedicado por cada procesador por el número de procesadores sea igual al tiempo de ejecución en un sólo procesador. Esto quiere decir que se requiere un valor cercano a la unidad. En base a los resultados obtenidos, se puede observar que están más cercanos a 0 que a 1, por lo que el programa no tiene una buena eficiencia.
+
+\subsubsection{Fracción serial}
+La fracción serial relaciona el speedup y la eficiencia con el propósito de tomar en cuenta otros factores además del tiempo.
+\par
+Los resultados se muestran a continuación:
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale = .5]{fraccion}
+\end{figure}
+
+Después de obtener las métricas de desempeño podemos afirmar que el programa no presenta una mejora en cuanto a su versión secuencial. En un apartado posterior se hará un análisis más profundo de esto.
+
+\subsection{Formas de comunicación}
+Una región paralela es ejecutada por varios hilos que acceden a los mismos datos compartidos, por lo que es necesaria la sincronización para proteger las regiones críticas o evitar la condición de carrera. OpenMP ofrece varios constructores que se pueden utilizar para la sincronización y coordinación de hilos dentro de una región paralela. El constructor critical especifica una región crítica que solo puede ser ejecutada por un único hilo a la vez. 
+\par
+Dentro del código del Algoritmo de Dijkstra encontramos distintas partes en donde se presentan regiones críticas, es por ello que se utiliza el constructor critical y otros constructores que ayudan a la sincronización de hilos como single y barrier.
+
+\subsection{Granularidad}
+El tiempo de cálculo de una tarea se denomina granularidad: las tareas con muchos cálculos tienen una granularidad de grano grueso, las tareas con solo unos pocos cálculos son de grano fino. 
+\par
+En el caso del programa del Algoritmo de Dijkstra se presenta una granularidad de tipo fina, ya que en cada región paralela hay pocas instrucciones. Lamentablemente, esto afecta directamente al desempeño del programa debido a que hay una gran sobrecarga de comunicación y sincronización de los hilos.
+
 \end{document}
