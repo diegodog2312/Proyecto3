@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 JAN 2021 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 JAN 2021 21:38
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**Investigacion.tex
-(./Investigacion.tex
+**"/Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/Investigacion.tex"
+(/Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/Investigacion.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06>
-(/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
@@ -22,22 +22,17 @@ File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-)
-(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2020/03/22 3.42 The Babel package
-
-(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/switch.def
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2020/03/22 3.42 Babel switching mechanism
-)
-(/usr/local/texlive/2020/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
-
-(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/03/22 3.42 Babel common definitions
 \babel@savecnt=\count175
 \U@D=\dimen135
-
-(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count176
 )
@@ -47,60 +42,53 @@ Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
-))
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
-)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen136
 \Gin@req@width=\dimen137
-)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count178
 \l__pdf_internal_box=\box45
-)
-(./Investigacion.aux
+) (/Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/Investigacion.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
 \openout1 = `Investigacion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Info: Redefining \. on input line 14.
-LaTeX Info: Redefining \% on input line 14.
-
-(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+ (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count179
 \scratchdimen=\dimen138
@@ -115,109 +103,56 @@ LaTeX Info: Redefining \% on input line 14.
 \everyMPtoPDFconversion=\toks18
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 16.
+(Font)              <12> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
+(Font)              <8> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 16.
+(Font)              <6> on input line 17.
+ [1
 
-[1
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<./imagenes/grafos1.jpg, id=10, 498.60226pt x 449.41008pt>
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+<./imagenes/algoritmo.png, id=17, 380.17032pt x 131.74219pt>
+File: ./imagenes/algoritmo.png Graphic file (type png)
+<use ./imagenes/algoritmo.png>
+Package pdftex.def Info: ./imagenes/algoritmo.png  used on input line 71.
+(pdftex.def)             Requested size: 323.9978pt x 112.27888pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 76.
+ [4] [5 </Users/diegoignacionunezhernandez/OneDrive - Escuela Nacional Colegio de Ciencias y Humanidades, UNAM/EDA2_/Proyecto/Proyecto3/Documento/./imagenes/algoritmo.png>]
+<./imagenes/grafos1.jpg, id=28, 498.60226pt x 449.41008pt>
 File: ./imagenes/grafos1.jpg Graphic file (type jpg)
 <use ./imagenes/grafos1.jpg>
-Package pdftex.def Info: ./imagenes/grafos1.jpg  used on input line 48.
+Package pdftex.def Info: ./imagenes/grafos1.jpg  used on input line 112.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-<./imagenes/grafos2.jpg, id=11, 498.60226pt x 449.41008pt>
-File: ./imagenes/grafos2.jpg Graphic file (type jpg)
-<use ./imagenes/grafos2.jpg>
-Package pdftex.def Info: ./imagenes/grafos2.jpg  used on input line 54.
-(pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-<./imagenes/grafos3.jpg, id=12, 498.60226pt x 449.41008pt>
-File: ./imagenes/grafos3.jpg Graphic file (type jpg)
-<use ./imagenes/grafos3.jpg>
-Package pdftex.def Info: ./imagenes/grafos3.jpg  used on input line 61.
-(pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-<./imagenes/grafos5.jpg, id=13, 498.60226pt x 449.41008pt>
-File: ./imagenes/grafos5.jpg Graphic file (type jpg)
-<use ./imagenes/grafos5.jpg>
-Package pdftex.def Info: ./imagenes/grafos5.jpg  used on input line 67.
-(pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-
-[2] [3 <./imagenes/grafos1.jpg> <./imagenes/grafos2.jpg>] [4 <./imagenes/grafos
-3.jpg> <./imagenes/grafos5.jpg>]
-<./imagenes/tiempo.png, id=23, 947.54pt x 405.515pt>
-File: ./imagenes/tiempo.png Graphic file (type png)
-<use ./imagenes/tiempo.png>
-Package pdftex.def Info: ./imagenes/tiempo.png  used on input line 94.
-(pdftex.def)             Requested size: 473.76883pt x 202.75699pt.
-
-Overfull \hbox (113.76883pt too wide) in paragraph at lines 94--95
- [][] 
- []
-
-<./imagenes/speedup.png, id=25, 951.555pt x 196.735pt>
-File: ./imagenes/speedup.png Graphic file (type png)
-<use ./imagenes/speedup.png>
-Package pdftex.def Info: ./imagenes/speedup.png  used on input line 107.
-(pdftex.def)             Requested size: 475.77634pt x 98.36725pt.
-
-Overfull \hbox (115.77634pt too wide) in paragraph at lines 107--108
- [][] 
- []
-
-[5] [6 <./imagenes/tiempo.png> <./imagenes/speedup.png>]
-<./imagenes/eficiencia.png, id=35, 948.54375pt x 192.72pt>
-File: ./imagenes/eficiencia.png Graphic file (type png)
-<use ./imagenes/eficiencia.png>
-Package pdftex.def Info: ./imagenes/eficiencia.png  used on input line 119.
-(pdftex.def)             Requested size: 474.2707pt x 96.35976pt.
-
-Overfull \hbox (114.2707pt too wide) in paragraph at lines 119--120
- [][] 
- []
-
-<./imagenes/fraccion.png, id=36, 952.55875pt x 192.72pt>
-File: ./imagenes/fraccion.png Graphic file (type png)
-<use ./imagenes/fraccion.png>
-Package pdftex.def Info: ./imagenes/fraccion.png  used on input line 131.
-(pdftex.def)             Requested size: 476.27821pt x 96.35976pt.
-
-Overfull \hbox (116.27821pt too wide) in paragraph at lines 131--132
- [][] 
- []
-
-[7 <./imagenes/eficiencia.png>] [8 <./imagenes/fraccion.png>]
-(./Investigacion.aux
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-) ) 
-Here is how much of TeX's memory you used:
- 2233 strings out of 480608
- 32265 string characters out of 5903631
- 283489 words of memory out of 5000000
- 18143 multiletter control sequences out of 15000+600000
- 536893 words of font info for 39 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 30i,7n,35p,580b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
-b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Investigacion.pdf (8 pages, 540491 bytes).
-PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ [6]
+<./imagenes/grafos2.jpg, id=32, 498.60226pt x 449.41008pt>
+File: ./imagene
