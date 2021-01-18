@@ -25,6 +25,13 @@ La ventaja de esto es que múltiples procesadores pueden cumplir una tarea o pue
 \paragraph{}
 El problema de camino más corto es uno de los problemas fundamentales de optimización y uno de los más notorios en modelos computacionales paralelos debido a su amplio campo de aplicaciones. En este proyecto, abordaremos este problema haciendo uso del algoritmo de Dijkstra con la objetivo de analizar primero la definición y funcionamiento del algoritmo, tomando en cuenta sus características, pseudocódigo, ventajas y analizando en particular la implementación paralela. Finalmente se hará una comparación entre las dos versiones para encontrar cuál resulta más eficiente al hacer pruebas con OpenMP en el lenguaje C. 
 
+\section{Objetivos}
+\begin{enumerate}
+\item Que el alumno ponga en práctica los conceptos de la programación paralela a través de la implementación de un algoritmo paralelo, así mismo desarrolle su capacidad para responder preguntas acerca de un concepto analizado a profundidad.
+\item Analizar el programa del algoritmo de Dijkstra, tanto en la versión secuencial, como en la versión paralela para determinar cuál es más eficiente en base a las métricas de desempeño.
+
+\end{enumerate}
+
 \section{Antecedentes}
 Aunque hay una gran cantidad de estudios teóricos reportados sobre el procesamiento de grafos como Arjomandi en 1975 [1], Benltey en 1980[2], en el pasado no muchos de ellos consideraron el algoritmo para la ruta más corta. Uno de los pocos a encontrar fue realizado en 1980 por Deo et al. [3] en el que se diseñó, codificó y se ejecutó un algoritmo paralelo en una computadora con arquitectura MIMD. 
 
@@ -173,7 +180,7 @@ Para el programa del Algoritmo de Dijkstra se obtuvo lo siguiente:
 \includegraphics[width=1\linewidth]{speedup}
 \end{figure}
 
-\par
+\paragraph{}
 En los tres procesadores se observa que el valor del speedup es menor que la unidad. Esto quiere decir que el algoritmo ejecutado en forma paralela no presenta una mejora en cuanto al tiempo de ejecución, al contrario, hace que el programa se ejecute más lento.
 
 \subsubsection{Eficiencia}
@@ -186,7 +193,7 @@ Los cálculos de eficiencias obtenidos fueron los siguientes:
 \includegraphics[width=1\linewidth]{eficiencia}
 \end{figure}
 
-\par
+\paragraph{}
 Si nuestros procesadores se utilizan de forma eficiente se espera que el tiempo de ejecución dedicado por cada procesador por el número de procesadores sea igual al tiempo de ejecución en un sólo procesador. Esto quiere decir que se requiere un valor cercano a la unidad. En base a los resultados obtenidos, se puede observar que están más cercanos a 0 que a 1, por lo que el programa no tiene una buena eficiencia.
 
 \subsubsection{Fracción serial}
@@ -199,7 +206,7 @@ Los resultados se muestran a continuación:
 \includegraphics[width=1\linewidth]{fraccion}
 \end{figure}
 
-\par
+\paragraph{}
 La fracción serial contenida en un código paralelo degrada el rendimiento. Si sumamos el valor de la fracción serial más el valor de la fracción paralela del código debemos de obtener un valor de uno. Esto quiere decir que el valor de la fracción serial debe ser menor que la unidad, cosa que no pasa con los resultados obtenidos.
 \par
 Después de obtener las métricas de desempeño podemos afirmar que el programa no presenta una mejora en cuanto a su versión secuencial. En un apartado posterior se hará un análisis más profundo de esto. 
@@ -268,6 +275,8 @@ El algoritmo en versión secuencial es más rápido cuando se tiene un número p
 \par
 La razón de esto se debe a diversos factores. Primero hay que recordar que la complejidad del algoritmo secuencial de Dijkstra es de $O(n^2)$; esto quiere decir que mientras más nodos tengamos, el algoritmo tarda más en su ejecución. Por otro lado, en la versión paralela, al aumentar el tamaño del grafo cada hilo trabaja de forma más independiente con sus nodos asignados, por lo que el tiempo de comunicación y sincronización entre hilos se vuelve algo más insignificante. 
 
+\section{Autoevaluación del equipo}
+10 alv
 
 \begin{thebibliography}{x}
  \bibitem{Arjomandi} \textsc{Arjomandi, E.(1975).}
@@ -323,11 +332,11 @@ University, USA.
 \bibitem{Pardo}\textsc{Pardo,F. (2004)}
 	\textit{Arquitectura e ingeniería de los computadores},  Valencia: Universidad de Valencia.
 
-\bibitem{Jiménez}\textsc{Jiménez, D. (2013)}
-	\textit{Introducción a las arquitecturas paralelas}, Universitat Oberta de Catalunya.
+\bibitem{Jimenez}\textsc{Jiménez, D. (2013)}
+	\textit{Introducción a las arquitecturas paralelas},  Universitat Oberta de Catalunya.
 	
 \bibitem{Pacheco}\textsc{Pacheco, P. (2011)}
-	\textit{An Introduction to Parallel Programming}, MA, USA: Morgan Kaufmann.
+	\textit{An Introduction to Parallel Programming},  MA, USA: Morgan Kaufmann.
 
 \end{thebibliography}
 \end{document}

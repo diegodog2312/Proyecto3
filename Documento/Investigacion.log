@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  18 JAN 2021 14:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  18 JAN 2021 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -83,91 +83,6 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 (./Investigacion.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \unhbox 
-l.64 ...otect \penalty \@M \hskip \z@skip nez}{19}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \unhbox 
-l.64 ...otect \penalty \@M \hskip \z@skip nez}{19}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.64 ...otect \penalty \@M \hskip \z@skip nez}{19}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 ...otect \penalty \@M \hskip \z@skip nez}{19}
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Extra }, or forgotten \endgroup.
-<argument> ...respaces \relax \accent 19 e\egroup 
-                                                  \spacefactor \accent@space...
-l.64 ...otect \penalty \@M \hskip \z@skip nez}{19}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \accent@spacefactor 
-l.64 ...otect \penalty \@M \hskip \z@skip nez}{19}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Bad space factor (0).
-<to be read again> 
-                   \accent@spacefactor 
-l.64 ...otect \penalty \@M \hskip \z@skip nez}{19}
-                                                  
-I allow only values in the range 1..32767 here.
-
-! Extra \endcsname.
-\@namedef ...xpandafter \def \csname #1\endcsname 
-                                                  
-l.64 ...otect \penalty \@M \hskip \z@skip nez}{19}
-                                                  
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Extra }, or forgotten \endgroup.
-\@newl@bel ...ined}}\global \@namedef {#1@#2}{#3}}
-                                                  
-l.64 ...otect \penalty \@M \hskip \z@skip nez}{19}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
 )
 \openout1 = `Investigacion.aux'.
 
@@ -187,7 +102,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
- (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count179
 \scratchdimen=\dimen138
@@ -242,9 +158,6 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-[1
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -252,202 +165,155 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 17.
 
-[2] [3] [4]
-<./imagenes/algoritmo.png, id=20, 380.17032pt x 131.74219pt>
+[1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3]
+<./imagenes/algoritmo.png, id=17, 380.17032pt x 131.74219pt>
 File: ./imagenes/algoritmo.png Graphic file (type png)
 <use ./imagenes/algoritmo.png>
-Package pdftex.def Info: ./imagenes/algoritmo.png  used on input line 73.
+Package pdftex.def Info: ./imagenes/algoritmo.png  used on input line 80.
 (pdftex.def)             Requested size: 323.9978pt x 112.27888pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 78.
- [5] [6 <./imagenes/algoritmo.png>] [7]
-<./imagenes/grafos1.jpg, id=35, 498.60226pt x 449.41008pt>
+(Font)              <10.95> on input line 85.
+ [4] [5 <./imagenes/algoritmo.png>] [6]
+<./imagenes/grafos1.jpg, id=31, 498.60226pt x 449.41008pt>
 File: ./imagenes/grafos1.jpg Graphic file (type jpg)
 <use ./imagenes/grafos1.jpg>
-Package pdftex.def Info: ./imagenes/grafos1.jpg  used on input line 114.
+Package pdftex.def Info: ./imagenes/grafos1.jpg  used on input line 121.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-<./imagenes/grafos2.jpg, id=36, 498.60226pt x 449.41008pt>
+<./imagenes/grafos2.jpg, id=32, 498.60226pt x 449.41008pt>
 File: ./imagenes/grafos2.jpg Graphic file (type jpg)
 <use ./imagenes/grafos2.jpg>
-Package pdftex.def Info: ./imagenes/grafos2.jpg  used on input line 120.
+Package pdftex.def Info: ./imagenes/grafos2.jpg  used on input line 127.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-<./imagenes/grafos3.jpg, id=37, 498.60226pt x 449.41008pt>
+<./imagenes/grafos3.jpg, id=33, 498.60226pt x 449.41008pt>
 File: ./imagenes/grafos3.jpg Graphic file (type jpg)
 <use ./imagenes/grafos3.jpg>
-Package pdftex.def Info: ./imagenes/grafos3.jpg  used on input line 127.
+Package pdftex.def Info: ./imagenes/grafos3.jpg  used on input line 134.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-<./imagenes/grafos5.jpg, id=38, 498.60226pt x 449.41008pt>
+<./imagenes/grafos5.jpg, id=34, 498.60226pt x 449.41008pt>
 File: ./imagenes/grafos5.jpg Graphic file (type jpg)
 <use ./imagenes/grafos5.jpg>
-Package pdftex.def Info: ./imagenes/grafos5.jpg  used on input line 133.
+Package pdftex.def Info: ./imagenes/grafos5.jpg  used on input line 140.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
- [8 <./imagenes/grafos1.jpg>] [9 <./imagenes/grafos2.jpg> <./imagenes/grafos3.j
-pg>] [10 <./imagenes/grafos5.jpg>]
-<./imagenes/tiempo.png, id=48, 947.54pt x 405.515pt>
+ [7 <./imagenes/grafos1.jpg>]
+[8 <./imagenes/grafos2.jpg> <./imagenes/grafos3.jpg>] [9 <./imagenes/grafos5.jp
+g>]
+<./imagenes/tiempo.png, id=45, 947.54pt x 405.515pt>
 File: ./imagenes/tiempo.png Graphic file (type png)
 <use ./imagenes/tiempo.png>
-Package pdftex.def Info: ./imagenes/tiempo.png  used on input line 160.
+Package pdftex.def Info: ./imagenes/tiempo.png  used on input line 167.
 (pdftex.def)             Requested size: 360.0pt x 154.06635pt.
-<./imagenes/speedup.png, id=49, 951.555pt x 196.735pt>
+<./imagenes/speedup.png, id=46, 951.555pt x 196.735pt>
 File: ./imagenes/speedup.png Graphic file (type png)
 <use ./imagenes/speedup.png>
-Package pdftex.def Info: ./imagenes/speedup.png  used on input line 173.
+Package pdftex.def Info: ./imagenes/speedup.png  used on input line 180.
 (pdftex.def)             Requested size: 360.0pt x 74.42986pt.
- [11 <./imagenes/tiempo.png>]
-<./imagenes/eficiencia.png, id=55, 948.54375pt x 192.72pt>
+ [10 <./imagenes/tiempo.png>]
+<./imagenes/eficiencia.png, id=52, 948.54375pt x 192.72pt>
 File: ./imagenes/eficiencia.png Graphic file (type png)
 <use ./imagenes/eficiencia.png>
-Package pdftex.def Info: ./imagenes/eficiencia.png  used on input line 186.
+Package pdftex.def Info: ./imagenes/eficiencia.png  used on input line 193.
 (pdftex.def)             Requested size: 360.0pt x 73.14319pt.
-<./imagenes/fraccion.png, id=56, 952.55875pt x 192.72pt>
+<./imagenes/fraccion.png, id=53, 952.55875pt x 192.72pt>
 File: ./imagenes/fraccion.png Graphic file (type png)
 <use ./imagenes/fraccion.png>
-Package pdftex.def Info: ./imagenes/fraccion.png  used on input line 199.
+Package pdftex.def Info: ./imagenes/fraccion.png  used on input line 206.
 (pdftex.def)             Requested size: 360.0pt x 72.83441pt.
- [12 <./imagenes/speedup.png> <./imagenes/eficiencia.png>] [13 <./imagenes/frac
+ [11 <./imagenes/speedup.png> <./imagenes/eficiencia.png>] [12 <./imagenes/frac
 cion.png>]
-<./imagenes/hil1v4.png, id=67, 1044.90375pt x 647.41875pt>
+<./imagenes/hil1v4.png, id=63, 1044.90375pt x 647.41875pt>
 File: ./imagenes/hil1v4.png Graphic file (type png)
 <use ./imagenes/hil1v4.png>
-Package pdftex.def Info: ./imagenes/hil1v4.png  used on input line 228.
+Package pdftex.def Info: ./imagenes/hil1v4.png  used on input line 235.
 (pdftex.def)             Requested size: 360.0pt x 223.05347pt.
-<./imagenes/tablas.png, id=68, 1204.5pt x 803.0pt>
+<./imagenes/tablas.png, id=64, 1204.5pt x 803.0pt>
 File: ./imagenes/tablas.png Graphic file (type png)
 <use ./imagenes/tablas.png>
-Package pdftex.def Info: ./imagenes/tablas.png  used on input line 237.
+Package pdftex.def Info: ./imagenes/tablas.png  used on input line 244.
 (pdftex.def)             Requested size: 360.0pt x 239.99515pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./imagenes/tablas1.png, id=69, 581.92406pt x 378.66469pt>
+<./imagenes/tablas1.png, id=65, 581.92406pt x 378.66469pt>
 File: ./imagenes/tablas1.png Graphic file (type png)
 <use ./imagenes/tablas1.png>
-Package pdftex.def Info: ./imagenes/tablas1.png  used on input line 243.
+Package pdftex.def Info: ./imagenes/tablas1.png  used on input line 250.
 (pdftex.def)             Requested size: 323.9978pt x 210.83162pt.
-[14 <./imagenes/hil1v4.png>] [15 <./imagenes/tablas.png>] [16 <./imagenes/tabla
+[13 <./imagenes/hil1v4.png>] [14 <./imagenes/tablas.png>] [15 <./imagenes/tabla
 s1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 286--288
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 []\OT1/cmr/m/sc/10.95 Matloff, N. \OT1/cmr/m/it/10.95 Pro-gram-ming on Pa-ra-ll
 el Ma-chi-nes\OT1/cmr/m/n/10.95 , Uni-ver-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--288
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 \OT1/cmr/m/n/10.95 sity of Ca-li-for-nia, Da-vis, http://heather.cs.ucdavis.edu
 /mat-
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 295--297
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
 []\OT1/cmr/m/sc/10.95 Li J. (2020) \OT1/cmr/m/it/10.95 Pro-gram-ming on Pa-ra-l
 lel Ma-chi-nes\OT1/cmr/m/n/10.95 , Pro-cee-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--297
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
 \OT1/cmr/m/n/10.95 dings of the 52nd An-nual ACM SI-GACT Sym-po-sium on
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 295--297
+Underfull \hbox (badness 4940) in paragraph at lines 304--306
 \OT1/cmr/m/n/10.95 Theory of Com-pu-ting (STOC '20), Chica-go, USA, 14 pa-ges.
  []
 
 
-Underfull \hbox (badness 7667) in paragraph at lines 305--307
+Underfull \hbox (badness 7667) in paragraph at lines 314--316
 []\OT1/cmr/m/sc/10.95 Mateti, P., Deo, N. (1982) \OT1/cmr/m/it/10.95 Pa-ra-llel
  al-go-rithms for the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--307
+Underfull \hbox (badness 10000) in paragraph at lines 314--316
 \OT1/cmr/m/it/10.95 sin-gle sour-ce shor-test path pro-blem\OT1/cmr/m/n/10.95 ,
  Com-pu-ting 29, 31{49,
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 314--316
+Underfull \hbox (badness 1097) in paragraph at lines 323--325
 \OT1/cmr/m/n/10.95 pu-ter Scien-ce, vol 1450. Sprin-ger, Ber-lin, Hei-del-berg.
  https://doi-
  []
 
-[18] [19] (./Investigacion.aux
+[17] [18] (./Investigacion.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \unhbox 
-l.65 ...otect \penalty \@M \hskip \z@skip nez}{19}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\@newl@bel ... \bbl@tempa \csname #1@#2\endcsname 
-                                                  \def \bbl@tempb {#3}\@safe...
-l.65 ...otect \penalty \@M \hskip \z@skip nez}{19}
-                                                  
-I'm ignoring this, since I wasn't doing a \csname.
-
-)
-! Missing $ inserted.
-<inserted text> 
-                $
-l.333 \end{document}
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.333 \end{document}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! \textfont 7 is undefined (character ^^P).
-<inserted text> $
-                 
-l.333 \end{document}
-                    
-Somewhere in the math formula just ended, you used the
-stated character from an undefined font family. For example,
-plain TeX doesn't allow \it or \sl in subscripts. Proceed,
-and I'll try to forget that I needed that character.
-
- )
-(\end occurred when \iftrue on line 326 was incomplete) 
+) ) 
 Here is how much of TeX's memory you used:
  2787 strings out of 480608
- 41670 string characters out of 5903631
- 291561 words of memory out of 5000000
+ 41674 string characters out of 5903631
+ 291543 words of memory out of 5000000
  18655 multiletter control sequences out of 15000+600000
  538156 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,7n,35p,853b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Investigacion.pdf (19 pages, 699956 bytes).
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Investigacion.pdf (18 pages, 700466 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
