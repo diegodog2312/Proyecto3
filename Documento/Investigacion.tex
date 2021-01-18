@@ -2,6 +2,7 @@
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
 \graphicspath{ {./imagenes/} }
+\usepackage[section]{placeins}
 
 \title{Proyecto \#2: Programación paralela\\
 Algoritmo de Dijkstra\\
@@ -15,10 +16,73 @@ Algoritmo de Dijkstra\\
 
 \maketitle{}
 
+\section{Introducción}
+El campo de la arquitectura digital de las computadores ha crecido exponencialmente en los últimos años. De manera simultánea, la investigación sobre diferentes formas de concurrencia, desde la segmentación estándar hasta paralelismo puro y la creación de estructuras que puedan soportar modelos de programación para estos sistemas han permito que la capacidad y productividad del hardware continue creciendo también. Los cumputadores modernos se vuelven cada vez más eficientes al contar con más procesadores, núcleos y memoria. Esta una tendencia que se espere que continue en los próximos años. 
+
+\paragraph{}
+La ventaja de esto es que múltiples procesadores pueden cumplir una tarea o pueden dividirla para que más de un hilo trabaje sobre ella, cuyo resultado óptimo sería ejecutarla en menos tiempo que si sólo se hiciera de manera secuencial. Una de las formas de medir este rendimiento es a través de la complejidad que tiene, en el caso de un algoritmo paralelo se mide por el tiempo y el número de procesadores que se requieren. EL nuevo reto es orientar el diseño computacional a la simplicidad y alto rendimiento, pero conservando un bajo costo y necesidad de poder, el paralelsimo juega un papel importante en esto. 
+
+\paragraph{}
+El problema de camino más corto es uno de los problemas fundamentales de optimización y uno de los más notorios en modelos computacionales paralelos debido a su amplio campo de aplicaciones. En este proyecto, abordarenos este problema haciendo uso del algoritmo de Dijkstra con la objetivo de analizar primero la definición y funcionaiento del algoritmo, tomando en cuenta sus características, psudocódigo, ventajas y analizando en particular la implementación paralela. Finalmente se hará una comparación entre las dos versiones para encontrar cuál resulta más eficiente al hacer pruebas con OpenMP en el lenguaje C. 
+\section{Antecendentes}
+Aunque hay una gran cantidad de estudios teóricos reportados sobre el procesamiento de grafos como Arjomandi en 1975 [1], Benltey en 1980[2], en el pasado no muchos de ellos consideraron el algoritmo para la ruta más corta. Uno de los pocos a encontrar fue realizado en 1980 por Deo et al. [3] en el que se diseñó, codificó y se ejecutó un algoritmo paralelo en una computadora con arquitectura MIMD. 
+
+\paragraph*{}
+En los últimos 20 años, sin embargo, se ha explorado mucho más. Una de estas implementaciones fue realizada por Fang Zhou Lin y Nan Zhao [4] en 1999. Respecto a aplicaciones, en 2012, Songmin Jia, Xiaolin Yin, y Xiuzhi Li [5] propuesieron una técnica de Localización y Construcción de Mapas Simulánea (SLAM por sus siglas en inglés \textit {Simultaneous Localization and Map Building}) que resulta eficiente para la navegación de robots móbiles interiores basada en OpenMP. 
+El código implementado para realizar las prubas fue tomado de Programming on Parallel Machines de Matloff [6].
+
+
+\section{Programando en OpenMP}
+OpenMP es una API (interfaz de programa de aplicación) que se utiliza para dirigir explícitamente el paralelismo de memoria compartida. OpenMP se introdujo en 1997 para estandarizar las extensiones de programación para máquinas de memoria compartida. OpenMP se ha convertido en el entorno elegido por muchos, de los practicantes de este tipo de programación. Consiste en un conjunto de directivas que se agregan al código C / C ++ / FORTRAN que manipula los subprocesos, sin que el programador tenga que lidiar con los subprocesos directamente. De esta manera obtenemos "lo mejor de ambos mundos": el verdadero paralelismo de los hilos (no preventivos) y el placer de evitar las molestias de la programación de hilos. 
+
+\paragraph{}
+OpenMP proporciona una API "basada en directivas". Esto significa que hay instrucciones especiales de preprocesador conocidas como pragmas. Los pragmas generalmente se agregan a un sistema para permitir comportamientos que no son parte de la especificación C básica. Los compiladores que no apoyan los pragmas son libres de omitirlos. Esto permite que un programa que utiliza los pragmas se ejecute en cualquier plataforma. Entonces, en principio, si tiene un programa OpenMP cuidadosamente escrito, se puede compilar y ejecutar en cualquier sistema con un compilador C, independientemente de
+si el compilador es compatible con OpenMP.
+
+\paragraph{}
+Esta directiva le dice al sistema de tiempo de ejecución que ejecute el siguiente bloque estructurado de codificar en paralelo. Puede bifurcar o iniciar varios subprocesos para ejecutar el bloque estructurado, que es un bloque de código con un único punto de entrada y una única salida. El número de subprocesos iniciados depende del sistema, pero la mayoría de los sistemas
+comienza un hilo para cada núcleo disponible.
+
+\paragraph{}
+La ventaja de tener varios núcleos es que podríamos usar estos núcleos para extraer el paralelismo a nivel de subprocesos en un programa y, por lo tanto, aumentar el rendimiento de un solo programa. Se han realizado muchas investigaciones en esta área. Algunas de las ventajas de OpenMP incluyen: buen rendimiento, portátil (es compatible con una gran cantidad de compiladores), requiere muy poco esfuerzo de programación y permite que el programa ser paralelos incrementalmente.
+\section{El algortimo de Dijsktra}
+El algoritmo de Dijkstra es uno de los principales usados para encontrar las rutas más cortas en un gráfico ponderado por bordes y / o vértices. Dado un vértice de inicio en particular, encuentra el camino más corto desde todos los demás vértices del gráfico, incluido el destino deseado. 
+
+\paragraph{}
+Suponiendo que el camino más corto de s a t en la gráfica G pasa a través del nodo intermedio x. Es claro que esta ruta debe contener la ruta más corta de s - x como un prefijo, de lo contrario, podríamos acortar la ruta s - t usando el prefijo s - x. Por lo tanto tenemos que encontrar primero la ruta más corta de s a x antes de encontrar la más corta entre s y t. 
+
+\paragraph{}
+Este algoritmo procede a hacer ciclos en los que en cada uno de ellos calcula la ruta más corta de x a un nuevo vértice. Esto sugiere una estrategia dinámica. La ruta más corta de s a sí mimo es trivial a menos que hayan pesos negativos. Una vez que se determina la ruta a un nodo x, se checan todos los adyacentes a x para ver si hay un ,mejor camino desde s a un otro vértice atravesando a x.
+
+\paragraph{}
+Esto se puede explicar como referencia los siguientes pasos:
+
+\begin{enumerate}
+\item Seleccionar vértice de partida, es decir un origen.
+\item Marcar el punto de partida como el punto de inicio.
+\item Determinar los caminos especiales desde el nodo de partida, esdecir, el de inicio.
+\item Camino especial es aquel que solo puede trazarse a través de los nodos o vértices ya marcados.
+\item Para  cada  nodo  no  marcado,  se  debe  determinar  si  es  mejor  usar  el  camino  especial antes calculado o si es mejor usar el nuevo camino especial que resulte al marcar este nuevo nodo.
+\item Para  seleccionar  un  nuevo  nodo  no  marcado  como  referencia,  deberá  tomarse  aquel cuyo camino especial para llegar a él es el mínimo, por ejemplo si anteriormente marqué el  nodo  o  vértice  2,  el  cual  tiene  dos  nodos  adyacentes  3  y  4  cuyo  peso  en  la  arista corresponde a 10 y 5 respectivamente, se tomará como nuevo nodo de partida el 4, ya que el peso de la arista o camino es menor.
+\item Cada camino mínimo corresponde a la suma de los pesos de las aristas que forman el caminopara  ir  del  nodo  principal  al  resto  de  nodos,  pasando  únicamente  por  caminos especiales, es decir nodos marcados.
+\end{enumerate}
+
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{algoritmo.png}
+  \caption{Algoritmo de Dijstra.}
+\end{figure}
+
+\par
+La complejidad del algoritmo de Dijkstra en su versión serial es de $O(n^2)$ si no se usa una cola de prioridad, como es el caso de las implementaciones realizadas para este proyecto. Es igualmente costos calcular la ruta más corta de un vértice s a cualquier otro vértice como lo es calcular la ruta más corta de cualquier vértice a s. Por esto, se puede decir que el nodo origen no afecta el rendimiento. 
+
+\paragraph{}
+Hay muchas aplicaciones para el algoritmo de Dijkstra, algunas de las más relevantes las podemos encontrar en los mapas, por ejemplo Google Maps u otros servicios de navegación. Una aplicación particularmente relevante es en la epidemiología. Una versión de este tipo de algoritmo puede ser usada en el cálculo del tamaño esperado del brote de un simple contagio en una red de contactos conocida, generalmente esta operación se lleva a cabo mediante una simulación computacionalmente intensiva que permite modelar todas las redes que cambian dinámicamente cuando el contagio solo puede viajar hacia adelante en el tiempo.
+
+
+
 \section{Algoritmo utilizado y su implementación }
 
-
-Primero que nada, es importante aclarar que nos basamos en código encontrado en \cite{Matloff2012} al que se le hicieron algunas modificaciones, ya que se generaba una condición de carrera que será explicada más adelante.
+Primero que nada, es importante aclarar que nos basamos en código encontrado en (Matloff, 2012) con algunas modificaciones, ya que se generaba una condición de carrera que será explicada más adelante.
 \par 
 ¿Cómo correr el programa? El programa recibe dos parámetros desde la terminal, uno para indicar el número de nodos que tendrá el grafo aleatorio (llamado nv dentro del programa) y otro para indicar si se deben imprimir los resultados. Aunque esta última opción parece un poco extra o tonta, fue muy útil para las pruebas de rendimiento.
 \par 
@@ -68,7 +132,183 @@ En la siguiente iteración se repite el proceso, solo que esta vez ya estará ma
 \caption{El algoritmo finaliza una vez que se visitó el más lejano.}
 \end{figure}
 
-\begin{thebibliography}{0}
-	\bibitem{Matloff2012} Norm Matloff . Programming on Parallel Machines. 2012.
+\section{Paralelización del Algoritmo}
+\subsection{Nivel de paralelismo}
+Muchos algoritmos realizan cálculos atravesando iterativamente una gran estructura de datos por medio de un bucle. Por lo general, un bucle se ejecuta secuencialmente, lo que significa que los cálculos de la i-ésima iteración no se inician antes de que se completen todos los cálculos de la (i - 1) ésima iteración. Este esquema de ejecución se denomina ciclo secuencial.
+\par
+Si no hay dependencias entre las iteraciones de un bucle, las iteraciones se pueden ejecutar en un orden arbitrario y también se pueden ejecutar en paralelo por diferentes procesadores. Entonces, dicho bucle se denomina bucle paralelo.
+\par 
+En el caso del programa del Algoritmo de Dijkstra, cada hilo ejecuta una o más de las iteraciones, es decir, asume la responsabilidad de uno o más valores de i. Es por esto que podemos afirmar que el nivel de paralelismo que se maneja es a nivel de ciclo.
+
+\subsection{Métricas de desempeño}
+El principal propósito de escribir programas paralelos es aumentar el rendimiento con respecto a su contraparte secuencial. Para poder medir esto se establecieron las métricas de desempeño, que proporcionan elementos para decidir si los programas valen la pena o no.
+\par
+El tiempo de procesamiento del programa del Algoritmo de Dijkstra fue tomado en tres distintos procesadores con el mismo grafo para todos los casos. Los procesadores utilizados fueron los siguientes:
+\par
+Procesador 1: Intel i5, 2.50 GHz, 4 núcleos
+\par
+Procesador 2: Intel i5, 1.4 GHz, 4 núcleos
+\par
+Procesador 3: Intel i7, 2 GHz, 8 núcleos
+\par
+Los resultados obtenidos se muestran a continuación:
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=1\linewidth]{tiempo}
+\caption{Para la toma del tiempo se utilizó la función omp\_get\_wtime() de la biblioteca omp.h}
+\end{figure}
+
+\subsubsection{Speedup}
+Para el análisis de programas paralelos, una comparación con el tiempo de ejecución de una implementación secuencial es especialmente importante para ver el beneficio del paralelismo.
+\par
+El speedup de una implementación paralela expresa el ahorro de tiempo de ejecución que se puede obtener utilizando una ejecución paralela en n procesadores en comparación con la mejor implementación secuencial.
+\par
+Para el programa del Algoritmo de Dijkstra se obtuvo lo siguiente:
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=1\linewidth]{speedup}
+\end{figure}
+
+En los tres procesadores se observa que el valor del speedup es menor que la unidad. Esto quiere decir que el algoritmo ejecutado en forma paralela no presenta una mejora en cuanto al tiempo de ejecución, al contrario, hace que el programa se ejecute más lento.
+
+\subsubsection{Eficiencia}
+La eficiencia se define como la medida de la fracción de tiempo en la que cada procesador es usado para resolver el problema en cuestión de forma útil. En otras palabras, refleja el aprovechamiento de los recursos de hardware del sistema.
+\par
+Los cálculos de eficiencias obtenidos fueron los siguientes:
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=1\linewidth]{eficiencia}
+\end{figure}
+
+Si nuestros procesadores se utilizan de forma eficiente se espera que el tiempo de ejecución dedicado por cada procesador por el número de procesadores sea igual al tiempo de ejecución en un sólo procesador. Esto quiere decir que se requiere un valor cercano a la unidad. En base a los resultados obtenidos, se puede observar que están más cercanos a 0 que a 1, por lo que el programa no tiene una buena eficiencia.
+
+\subsubsection{Fracción serial}
+La fracción serial relaciona el speedup y la eficiencia con el propósito de tomar en cuenta otros factores además del tiempo.
+\par
+Los resultados se muestran a continuación:
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=1\linewidth]{fraccion}
+\end{figure}
+
+Después de obtener las métricas de desempeño podemos afirmar que el programa no presenta una mejora en cuanto a su versión secuencial. En un apartado posterior se hará un análisis más profundo de esto.
+
+\subsection{Formas de comunicación}
+Una región paralela es ejecutada por varios hilos que acceden a los mismos datos compartidos, por lo que es necesaria la sincronización para proteger las regiones críticas o evitar la condición de carrera. OpenMP ofrece varios constructores que se pueden utilizar para la sincronización y coordinación de hilos dentro de una región paralela. El constructor critical especifica una región crítica que solo puede ser ejecutada por un único hilo a la vez. 
+\par
+Dentro del código del Algoritmo de Dijkstra encontramos distintas partes en donde se presentan regiones críticas, es por ello que se utiliza el constructor critical y otros constructores que ayudan a la sincronización de hilos como single y barrier.
+
+\subsection{Granularidad}
+El tiempo de cálculo de una tarea se denomina granularidad: las tareas con muchos cálculos tienen una granularidad de grano grueso, las tareas con solo unos pocos cálculos son de grano fino. 
+\par
+En el caso del programa del Algoritmo de Dijkstra se presenta una granularidad de tipo fina, ya que en cada región paralela hay pocas instrucciones. Lamentablemente, esto afecta directamente al desempeño del programa debido a que hay una gran sobrecarga de comunicación y sincronización de los hilos.
+
+\section{Pruebas}
+
+\par
+Se realizaron múltiples pruebas para analizar el rendimiento del programa. Para ellos fue necesario ejecutar en tres diferentes procesadores las diferentes versiones y analizar su comportamiento. 
+
+\par
+Empezaremos comparando a la versión paralela consigo misma. n la Figura 2 se puede ver que sin importar el procesador que se use, la tendencia es que al usar más hilos, aumenta el tiempo de ejecución del programa. Esto se hace más evidente dependiendo del número de núcleos con los que cuente la computadora.  
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\linewidth]{hil1v4.png}
+  \caption{Ejecución en segundos usando 3 diferentes procesadores.}
+\end{figure}
+
+\paragraph{}
+Ahora, si comparamos el rendimiento de la versión serial contra la paralela (usando 4 hilos, es claro que el algoritmo linear es más eficiente. La diferencia crece conforme aumenta el tamaño de los datos. 
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\linewidth]{tablas.png}
+  \caption{Rendimiento de programa serial vs paralelo.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{tablas1.png}
+  \caption{Rendimiento de programa paralelo con diferente cantidad de nodos.}
+\end{figure}
+
+
+\paragraph{}
+Algo importante a notar aquí es que el tiempo de ejecución depende del tamaño del problema, es decir, cuando tenemos pocos nodos resulta poco conveniente implementar paralelismo. Mientras más crece la camtidad de nodos con la que se va a trabajar, la versión paralela del algoritmo se vuelve más eficiente, como lo indican las tablas de la Figura 9. 
+\par 
+Hay diferentes factores que pudieran estar favoreciendo este comportamiento. El primero de ellos es la sección crítica presente en el código. Es neesaria por que en cada iteración, los hilos calculan sus valores de distancia mínima local a un cierto vértice, y luego actualizan los valores globales. Dado que la actualización debe ser atómica (sólo puede ser realizada por un hilo), esto provoca cierta serialización del programa.
+\par
+Otro factor podría que es posible que ocurra False Sharing durante la ejecución. Esto se refiere a que cuando una parte del programa intenta acceder en el ciclo a datos que no serán alterados pero que comparten bloques de caché con datos que sí lo son, como en este caso las variables de distancia,el protocolo de caché puede forzar al programa a recargar todo el bloque a pesar de no ser extrictamente necesario, lo cual ocasiona esperas en la memoria además de perder eficiencia de procesador.
+
+\par
+Por último, se puede considerar el balance de carga, particularmente en el ciclo. En realidad no se está definiendo una partición específica de las iteraciones que le corresponden a cada hilo del programa. Por un lado, las particiones grandes son buenas, debido a que hay menos sobrecarga: cada vez que un hilo termina un fragmento, debe pasar por la sección crítica,que serializa nuestro programa paralelo y, por lo tanto, ralentiza las cosas. Por otro lado, si los tamaños de las particiones son grandes, entonces hacia el final del trabajo, algunos hilos pueden estar trabajando en sus últimos fragmentos mientras que otros han terminado y ahora están inactivos, renunciando así a una posible mejora de la velocidad.
+\par
+Por lo tanto, sería beneficioso tener trozos grandes al comienzo de la ejecución, para reducir la sobrecarga, pero trozos más pequeños al final. 
+Esto se puede hacer usando la cláusula guided o schedule.
+
+\paragraph{}
+En consecuencia, se puede decir que este algoritmo no es óptimo en su versión paralela dependiendo de qué se busque, a pesar de segmentar las tareas entre hilos, la versión serial resulta ser la mejor opción cuando se tienen pocos nodos. Todo lo mencionado anteriormente contribuye a que el rendimiento del programa no sea óptimo con pocos nodos, cuando esta cantidad aumenta, la distribución de tareas a través del paralelismo es finalmente suficiente para compensar el tiempo perdido en crear y sincronizar todos los hilos. Algo importante a notar aquí es que esto fue probado en programa de OpenMP y que el lenguaje, así como API, de implementación juega un rol en el rendimiento final. Además, sería posible hacer modificaciones al código utilizado con el fin de hacer su ejecución más rápida.
+
+\begin{thebibliography}{x}
+ \bibitem{Arjomandi} \textsc{Arjomandi, E.(1975).}
+ \textit{A study of parallelism in graph theory},Doctoral thesis, TR 86, Dept. of Computer Science, University of Toronto.
+ 
+ \bibitem{Bentley} \textsc{Bentley, J. L.(1979).}
+ 	\textit{A tree machine for searching problems.},Proc. International Conference on Parallel Processing, pp. 257-266. 	
+ 
+  \bibitem{Deo} \textsc{Deo, N., Pang, C. Y.(1980).}. \textit{Shortest path algorithms: taxonomy and annotation}, Computer Science Department, Washington State University, Pullman, Wash., Technical Report No. CS-80-057.
+ 	
+ 	 \bibitem{Lin} \textsc{Lin F. Z., Zhao N.(1999).} 
+ 	\textit{Parallel Implementation of Dijkstra's Algorithm}, pp COP5570.	   
+ \bibitem{Jia} \textsc{Jia S., Yin X., Li X.(2012)}
+ \textit{Mobile Robot Parallel PF-SLAM},IEEE, International Conference on Robotics and Biomimetics.  
+
+ \bibitem{Matloff} \textsc{Matloff, N.} 
+ 	\textit{Programming on Parallel Machines}, University of California, Davis, http://heather.cs.ucdavis.edu/mat-loff/158/PLN/ParProcBook.pdf.
+ 
+ \bibitem{Caola} \textsc{Caola, H., Wangb, F., Xin Fang, Tu H. L. (2012).} 
+ 	\textit{OpenMP Parallel Optimal Path Algorithm and Its Performance Analysis}, Jun Shi World Congress on Software Engineering, DOI 10.1109.
+ 	
+ \bibitem{Jasika} \textsc{Jasika N., Alispahic N., Elma A., Ilvana K., Elma L. y Nosovic, N. (2012).} 
+ 	\textit{Faster Parallel Algorithm for Approximate Shortest Path}, Proceedings of the 35th International Convention MIPRO, Opatija, pp. 1811-1815.
+ 	
+ \bibitem{Li} \textsc{Li J. (2020)} 
+ 	\textit{Programming on Parallel Machines}, Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing (STOC ’20), Chicago,  USA, 14 pages. https://doi.org/10.1145/3357713.3384268.
+
+
+ \bibitem{Li} \textsc{Li J. (2020)} 
+ 	\textit{Programming on Parallel Machines}, Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing (STOC ’20), Chicago,  USA, 14 pages. https://doi.org/10.1145/3357713.3384268.
+
+ \bibitem{Panitanarak} \textsc{Panitanarak, T. Madduri, K.} 
+ 	\textit{Performance Analysis of Single-source Shortest Path Algorithms on Distributed-memory Systems}, Department of Computer Science and Engineering, The Pennsylvania State University
+University, USA.
+
+ \bibitem{Li} \textsc{Li J. (2020)} 
+ 	\textit{Programming on Parallel Machines}, Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing (STOC ’20), Chicago,  USA, 14 pages. https://doi.org/10.1145/3357713.3384268.
+
+ \bibitem{Stefano} \textsc{Stefano G., Petricola A., Zaroliagis C.(2006)} 
+ 	\textit{On the implementation of parallel shortest path algorithms on a supercomputer}, Proceedings of ISPA’06, pp. 406-417.
+
+
+ \bibitem{Mateti} \textsc{Mateti, P., Deo, N. (1982)} 
+ 	\textit{Parallel algorithms for the single source shortest path problem}, Computing 29, 31–49, https://doi.org/10.1007/BF02254849.
+
+ \bibitem{Parhami} \textsc{Parhami B. (2002)} 
+ 	\textit{Introduction to Parallel Processing, Algorithms and Architectures}, Springer US, https://doi.org/10.1007/b116777.
+
+ \bibitem{Thomas} \textsc{Thomas H. Spencer. (1991)} 
+ 	\textit{More time-work tradeoffs for parallel graph algorithms}, Proceedings of the third annual ACM symposium on Parallel algorithms and architectures (SPAA '91). Association for Computing Machinery, New York, NY, USA, pp 81–93, https://doi.org/10.1145/113379.113387.
+
+ \bibitem{Crauser} \textsc{Crauser A., Mehlhorn K., Meyer U., Sanders P. (1998).} 
+ 	\textit{ A parallelization of Dijkstra's shortest path algorithm}, Mathematical Foundations of Computer Science 1998, Lecture Notes in Computer Science, vol 1450. Springer, Berlin, Heidelberg. https://doi-org.pbidi.unam.mx:2443/10.1007/BFb0055823.
+
+
+ \bibitem{Kulkarni} \textsc{Kulkarni P. ,Pathare S. (2014)} 
+ 	\textit{Performance Analysis of Parallel Algorithm over Sequential using OpenMP}, IOSR Journal of Computer Engineering. 16. 58-62. 10.9790/0661-162105862. 
+
 \end{thebibliography}
 \end{document}
