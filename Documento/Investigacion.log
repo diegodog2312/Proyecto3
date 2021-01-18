@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.1.16)  18 JAN 2021 12:16
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.15)  17 JAN 2021 21:11
+>>>>>>> parent of 8bd9519... a
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -150,6 +154,7 @@ File: ./imagenes//grafos5.jpg Graphic file (type jpg)
 <use ./imagenes//grafos5.jpg>
 Package pdftex.def Info: ./imagenes//grafos5.jpg  used on input line 67.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
+<<<<<<< HEAD
 
 [2] [3 <./imagenes//grafos1.jpg> <./imagenes//grafos2.jpg>] [4 <./imagenes//gra
 fos3.jpg> <./imagenes//grafos5.jpg>] [5] (./Investigacion.aux
@@ -170,6 +175,180 @@ pfb><d:/Programas/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
 pfb><d:/Programas/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
 pfb>
 Output written on Investigacion.pdf (5 pages, 311521 bytes).
+=======
+ [7 <./imagenes//grafos1.jpg>]
+[8 <./imagenes//grafos2.jpg> <./imagenes//grafos3.jpg>] [9 <./imagenes//grafos5
+.jpg>]
+<./imagenes//tiempo.png, id=44, 947.54pt x 405.515pt>
+File: ./imagenes//tiempo.png Graphic file (type png)
+<use ./imagenes//tiempo.png>
+Package pdftex.def Info: ./imagenes//tiempo.png  used on input line 158.
+(pdftex.def)             Requested size: 473.76883pt x 202.75699pt.
+
+Overfull \hbox (113.76883pt too wide) in paragraph at lines 158--159
+ [][] 
+ []
+
+[10 <./imagenes//tiempo.png>]
+<./imagenes//speedup.png, id=50, 951.555pt x 196.735pt>
+File: ./imagenes//speedup.png Graphic file (type png)
+<use ./imagenes//speedup.png>
+Package pdftex.def Info: ./imagenes//speedup.png  used on input line 171.
+(pdftex.def)             Requested size: 475.77634pt x 98.36725pt.
+
+Overfull \hbox (115.77634pt too wide) in paragraph at lines 171--172
+ [][] 
+ []
+
+<./imagenes//eficiencia.png, id=51, 948.54375pt x 192.72pt>
+File: ./imagenes//eficiencia.png Graphic file (type png)
+<use ./imagenes//eficiencia.png>
+Package pdftex.def Info: ./imagenes//eficiencia.png  used on input line 183.
+(pdftex.def)             Requested size: 474.2707pt x 96.35976pt.
+
+Overfull \hbox (114.2707pt too wide) in paragraph at lines 183--184
+ [][] 
+ []
+
+[11 <./imagenes//speedup.png> <./imagenes//eficiencia.png>]
+<./imagenes//fraccion.png, id=57, 952.55875pt x 192.72pt>
+File: ./imagenes//fraccion.png Graphic file (type png)
+<use ./imagenes//fraccion.png>
+Package pdftex.def Info: ./imagenes//fraccion.png  used on input line 195.
+(pdftex.def)             Requested size: 476.27821pt x 96.35976pt.
+
+Overfull \hbox (116.27821pt too wide) in paragraph at lines 195--196
+ [][] 
+ []
+
+[12 <./imagenes//fraccion.png>]
+<./imagenes//hil1v4.png, id=62, 1044.90375pt x 647.41875pt>
+File: ./imagenes//hil1v4.png Graphic file (type png)
+<use ./imagenes//hil1v4.png>
+Package pdftex.def Info: ./imagenes//hil1v4.png  used on input line 220.
+(pdftex.def)             Requested size: 323.9978pt x 200.74713pt.
+<./imagenes//tablas.png, id=63, 1204.5pt x 803.0pt>
+File: ./imagenes//tablas.png Graphic file (type png)
+<use ./imagenes//tablas.png>
+Package pdftex.def Info: ./imagenes//tablas.png  used on input line 229.
+(pdftex.def)             Requested size: 323.9978pt x 215.99196pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./imagenes//tablas1.png, id=64, 581.92406pt x 378.66469pt>
+File: ./imagenes//tablas1.png Graphic file (type png)
+<use ./imagenes//tablas1.png>
+Package pdftex.def Info: ./imagenes//tablas1.png  used on input line 235.
+(pdftex.def)             Requested size: 323.9978pt x 210.83162pt.
+[13 <./imagenes//hil1v4.png>] [14 <./imagenes//tablas.png>] [15 <./imagenes//ta
+blas1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
+[]\OT1/cmr/m/sc/10.95 Matloff, N. \OT1/cmr/m/it/10.95 Pro-gram-ming on Pa-ra-ll
+el Ma-chi-nes\OT1/cmr/m/n/10.95 , Uni-ver-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
+\OT1/cmr/m/n/10.95 sity of Ca-li-for-nia, Da-vis, http://heather.cs.ucdavis.edu
+/mat-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--281
+[]\OT1/cmr/m/sc/10.95 Li J. (2020) \OT1/cmr/m/it/10.95 Pro-gram-ming on Pa-ra-l
+lel Ma-chi-nes\OT1/cmr/m/n/10.95 , Pro-cee-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--281
+\OT1/cmr/m/n/10.95 dings of the 52nd An-nual ACM SI-GACT Sym-po-sium on
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 279--281
+\OT1/cmr/m/n/10.95 Theory of Com-pu-ting (STOC '20), Chica-go, USA, 14 pa-ges.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
+[]\OT1/cmr/m/sc/10.95 Li J. (2020) \OT1/cmr/m/it/10.95 Pro-gram-ming on Pa-ra-l
+lel Ma-chi-nes\OT1/cmr/m/n/10.95 , Pro-cee-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
+\OT1/cmr/m/n/10.95 dings of the 52nd An-nual ACM SI-GACT Sym-po-sium on
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 283--285
+\OT1/cmr/m/n/10.95 Theory of Com-pu-ting (STOC '20), Chica-go, USA, 14 pa-ges.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--291
+[]\OT1/cmr/m/sc/10.95 Li J. (2020) \OT1/cmr/m/it/10.95 Pro-gram-ming on Pa-ra-l
+lel Ma-chi-nes\OT1/cmr/m/n/10.95 , Pro-cee-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--291
+\OT1/cmr/m/n/10.95 dings of the 52nd An-nual ACM SI-GACT Sym-po-sium on
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 289--291
+\OT1/cmr/m/n/10.95 Theory of Com-pu-ting (STOC '20), Chica-go, USA, 14 pa-ges.
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 296--298
+[]\OT1/cmr/m/sc/10.95 Mateti, P., Deo, N. (1982) \OT1/cmr/m/it/10.95 ara-llel a
+l-go-rithms for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--298
+\OT1/cmr/m/it/10.95 sin-gle sour-ce shor-test path pro-blem\OT1/cmr/m/n/10.95 ,
+ Com-pu-ting 29, 31{49,
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 305--307
+\OT1/cmr/m/n/10.95 pu-ter Scien-ce, vol 1450. Sprin-ger, Ber-lin, Hei-del-berg.
+ https://doi-
+ []
+
+[17] (Investigacion.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2963 strings out of 479799
+ 45732 string characters out of 2869722
+ 335544 words of memory out of 3000000
+ 19929 multiletter control sequences out of 15000+200000
+ 540906 words of font info for 48 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 70i,7n,76p,864b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Sofia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb><C:/Users/Sofia/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Users/Sofia/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmcsc10.pfb><C:/Users/Sofia/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Sofia/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Sofia/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Sofia/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Sofia/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users
+/Sofia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+
+Output written on Investigacion.pdf (17 pages, 707285 bytes).
+>>>>>>> parent of 8bd9519... a
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream
