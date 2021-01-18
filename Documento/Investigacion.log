@@ -1,369 +1,178 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.15)  18 JAN 2021 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.1.16)  18 JAN 2021 12:16
 entering extended mode
-**./Investigacion.tex
-(Investigacion.tex
-LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-10-27> xparse <2020-03-03>
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Investigacion.tex
+(./Investigacion.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03>
+(d:/Programas/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+(d:/Programas/texlive/2020/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count175
-\c@section=\count176
-\c@subsection=\count177
-\c@subsubsection=\count178
-\c@paragraph=\count179
-\c@subparagraph=\count180
-\c@figure=\count181
-\c@table=\count182
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2020/10/27 3.51 The Babel package
+(d:/Programas/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/12/16 3.52 The Babel package
 
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2020/10/27 3.51 Babel common definitions
-\babel@savecnt=\count183
+(d:/Programas/texlive/2020/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/12/16 3.52 Babel common definitions
+\babel@savecnt=\count185
 \U@D=\dimen139
-\l@babelnohyphens=\language79
+\l@babelnohyphens=\language86
 
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(d:/Programas/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count184
+\bbl@dirlevel=\count186
 
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.l
-df
+(d:/Programas/texlive/2020/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 \es@quottoks=\toks15
-\es@quotdepth=\count185
+\es@quotdepth=\count187
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(d:/Programas/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen140
 \Gin@req@width=\dimen141
 )
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
-Package: placeins 2005/04/18  v 2.2
-)
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count186
+(d:/Programas/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count188
 \l__pdf_internal_box=\box47
-) (Investigacion.aux
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
-
-
-LaTeX Warning: Label `Li' multiply defined.
-
-
-LaTeX Warning: Label `Li' multiply defined.
-
+) (./Investigacion.aux
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
 )
 \openout1 = `Investigacion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
 
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+(d:/Programas/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count187
+\scratchcounter=\count189
 \scratchdimen=\dimen142
 \scratchbox=\box48
-\nofMPsegments=\count188
-\nofMParguments=\count189
+\nofMPsegments=\count190
+\nofMParguments=\count191
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count190
+\MPscratchCnt=\count192
 \MPscratchDim=\dimen143
-\MPnumerator=\count191
-\makeMPintoPDFobject=\count192
+\MPnumerator=\count193
+\makeMPintoPDFobject=\count194
 \everyMPtoPDFconversion=\toks18
 )
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+(d:/Programas/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-))
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
-ty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
-(C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
- (C:\Users\Sofia\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
-)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 17.
- [1
 
-{C:/Users/Sofia/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
-[3]
-<./imagenes//algoritmo.png, id=16, 380.17032pt x 131.74219pt>
-File: ./imagenes//algoritmo.png Graphic file (type png)
-<use ./imagenes//algoritmo.png>
-Package pdftex.def Info: ./imagenes//algoritmo.png  used on input line 71.
-(pdftex.def)             Requested size: 323.9978pt x 112.27888pt.
+(d:/Programas/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 76.
- [4] [5 <./imagenes//algoritmo.png>]
-<./imagenes//grafos1.jpg, id=27, 498.60226pt x 449.41008pt>
+(Font)              <12> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+
+[1
+
+{d:/Programas/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<./imagenes//grafos1.jpg, id=10, 498.60226pt x 449.41008pt>
 File: ./imagenes//grafos1.jpg Graphic file (type jpg)
 <use ./imagenes//grafos1.jpg>
-Package pdftex.def Info: ./imagenes//grafos1.jpg  used on input line 112.
+Package pdftex.def Info: ./imagenes//grafos1.jpg  used on input line 48.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
- [6]
-<./imagenes//grafos2.jpg, id=31, 498.60226pt x 449.41008pt>
+<./imagenes//grafos2.jpg, id=11, 498.60226pt x 449.41008pt>
 File: ./imagenes//grafos2.jpg Graphic file (type jpg)
 <use ./imagenes//grafos2.jpg>
-Package pdftex.def Info: ./imagenes//grafos2.jpg  used on input line 118.
+Package pdftex.def Info: ./imagenes//grafos2.jpg  used on input line 54.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-<./imagenes//grafos3.jpg, id=32, 498.60226pt x 449.41008pt>
+<./imagenes//grafos3.jpg, id=12, 498.60226pt x 449.41008pt>
 File: ./imagenes//grafos3.jpg Graphic file (type jpg)
 <use ./imagenes//grafos3.jpg>
-Package pdftex.def Info: ./imagenes//grafos3.jpg  used on input line 125.
+Package pdftex.def Info: ./imagenes//grafos3.jpg  used on input line 61.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
-<./imagenes//grafos5.jpg, id=33, 498.60226pt x 449.41008pt>
+<./imagenes//grafos5.jpg, id=13, 498.60226pt x 449.41008pt>
 File: ./imagenes//grafos5.jpg Graphic file (type jpg)
 <use ./imagenes//grafos5.jpg>
-Package pdftex.def Info: ./imagenes//grafos5.jpg  used on input line 131.
+Package pdftex.def Info: ./imagenes//grafos5.jpg  used on input line 67.
 (pdftex.def)             Requested size: 249.30052pt x 224.70448pt.
- [7 <./imagenes//grafos1.jpg>]
-[8 <./imagenes//grafos2.jpg> <./imagenes//grafos3.jpg>] [9 <./imagenes//grafos5
-.jpg>]
-<./imagenes//tiempo.png, id=44, 947.54pt x 405.515pt>
-File: ./imagenes//tiempo.png Graphic file (type png)
-<use ./imagenes//tiempo.png>
-Package pdftex.def Info: ./imagenes//tiempo.png  used on input line 158.
-(pdftex.def)             Requested size: 360.0pt x 154.06635pt.
-<./imagenes//speedup.png, id=45, 951.555pt x 196.735pt>
-File: ./imagenes//speedup.png Graphic file (type png)
-<use ./imagenes//speedup.png>
-Package pdftex.def Info: ./imagenes//speedup.png  used on input line 171.
-(pdftex.def)             Requested size: 360.0pt x 74.42986pt.
- [10 <./imagenes//tiempo.png>]
-<./imagenes//eficiencia.png, id=51, 948.54375pt x 192.72pt>
-File: ./imagenes//eficiencia.png Graphic file (type png)
-<use ./imagenes//eficiencia.png>
-Package pdftex.def Info: ./imagenes//eficiencia.png  used on input line 183.
-(pdftex.def)             Requested size: 360.0pt x 73.14319pt.
-<./imagenes//fraccion.png, id=52, 952.55875pt x 192.72pt>
-File: ./imagenes//fraccion.png Graphic file (type png)
-<use ./imagenes//fraccion.png>
-Package pdftex.def Info: ./imagenes//fraccion.png  used on input line 195.
-(pdftex.def)             Requested size: 360.0pt x 72.83441pt.
- [11 <./imagenes//speedup.png> <./imagenes//eficiencia.png>]
-<./imagenes//hil1v4.png, id=58, 1044.90375pt x 647.41875pt>
-File: ./imagenes//hil1v4.png Graphic file (type png)
-<use ./imagenes//hil1v4.png>
-Package pdftex.def Info: ./imagenes//hil1v4.png  used on input line 220.
-(pdftex.def)             Requested size: 360.0pt x 223.05347pt.
- [12 <./imagenes//fraccion.png>]
-<./imagenes//tablas.png, id=63, 1204.5pt x 803.0pt>
-File: ./imagenes//tablas.png Graphic file (type png)
-<use ./imagenes//tablas.png>
-Package pdftex.def Info: ./imagenes//tablas.png  used on input line 229.
-(pdftex.def)             Requested size: 360.0pt x 239.99515pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./imagenes//tablas1.png, id=64, 581.92406pt x 378.66469pt>
-File: ./imagenes//tablas1.png Graphic file (type png)
-<use ./imagenes//tablas1.png>
-Package pdftex.def Info: ./imagenes//tablas1.png  used on input line 235.
-(pdftex.def)             Requested size: 323.9978pt x 210.83162pt.
-[13 <./imagenes//hil1v4.png>] [14 <./imagenes//tablas.png>] [15 <./imagenes//ta
-blas1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 270--272
-[]\OT1/cmr/m/sc/10.95 Matloff, N. \OT1/cmr/m/it/10.95 Pro-gram-ming on Pa-ra-ll
-el Ma-chi-nes\OT1/cmr/m/n/10.95 , Uni-ver-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--272
-\OT1/cmr/m/n/10.95 sity of Ca-li-for-nia, Da-vis, http://heather.cs.ucdavis.edu
-/mat-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
-[]\OT1/cmr/m/sc/10.95 Li J. (2020) \OT1/cmr/m/it/10.95 Pro-gram-ming on Pa-ra-l
-lel Ma-chi-nes\OT1/cmr/m/n/10.95 , Pro-cee-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
-\OT1/cmr/m/n/10.95 dings of the 52nd An-nual ACM SI-GACT Sym-po-sium on
- []
-
-
-Underfull \hbox (badness 4940) in paragraph at lines 279--281
-\OT1/cmr/m/n/10.95 Theory of Com-pu-ting (STOC '20), Chica-go, USA, 14 pa-ges.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
-[]\OT1/cmr/m/sc/10.95 Li J. (2020) \OT1/cmr/m/it/10.95 Pro-gram-ming on Pa-ra-l
-lel Ma-chi-nes\OT1/cmr/m/n/10.95 , Pro-cee-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
-\OT1/cmr/m/n/10.95 dings of the 52nd An-nual ACM SI-GACT Sym-po-sium on
- []
-
-
-Underfull \hbox (badness 4940) in paragraph at lines 283--285
-\OT1/cmr/m/n/10.95 Theory of Com-pu-ting (STOC '20), Chica-go, USA, 14 pa-ges.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--292
-[]\OT1/cmr/m/sc/10.95 Li J. (2020) \OT1/cmr/m/it/10.95 Pro-gram-ming on Pa-ra-l
-lel Ma-chi-nes\OT1/cmr/m/n/10.95 , Pro-cee-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--292
-\OT1/cmr/m/n/10.95 dings of the 52nd An-nual ACM SI-GACT Sym-po-sium on
- []
-
-
-Underfull \hbox (badness 4940) in paragraph at lines 290--292
-\OT1/cmr/m/n/10.95 Theory of Com-pu-ting (STOC '20), Chica-go, USA, 14 pa-ges.
- []
-
-[16]
-Underfull \hbox (badness 7667) in paragraph at lines 297--299
-[]\OT1/cmr/m/sc/10.95 Mateti, P., Deo, N. (1982) \OT1/cmr/m/it/10.95 Pa-ra-llel
- al-go-rithms for the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--299
-\OT1/cmr/m/it/10.95 sin-gle sour-ce shor-test path pro-blem\OT1/cmr/m/n/10.95 ,
- Com-pu-ting 29, 31{49,
- []
-
-
-Underfull \hbox (badness 1097) in paragraph at lines 306--308
-\OT1/cmr/m/n/10.95 pu-ter Scien-ce, vol 1450. Sprin-ger, Ber-lin, Hei-del-berg.
- https://doi-
- []
-
-[17] (Investigacion.aux
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
-)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[2] [3 <./imagenes//grafos1.jpg> <./imagenes//grafos2.jpg>] [4 <./imagenes//gra
+fos3.jpg> <./imagenes//grafos5.jpg>] [5] (./Investigacion.aux
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+) ) 
 Here is how much of TeX's memory you used:
- 2962 strings out of 479799
- 45715 string characters out of 2869722
- 335549 words of memory out of 3000000
- 19928 multiletter control sequences out of 15000+200000
- 540906 words of font info for 48 fonts, out of 3000000 for 9000
+ 2374 strings out of 479304
+ 34640 string characters out of 5866263
+ 334226 words of memory out of 5000000
+ 19584 multiletter control sequences out of 15000+600000
+ 407370 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,7n,76p,864b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Sofia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/Sofia/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/Sofia/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmcsc10.pfb><C:/Users/Sofia/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Sofia/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Sofia/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Sofia/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Sofia/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users
-/Sofia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-
-Output written on Investigacion.pdf (17 pages, 706923 bytes).
+ 68i,7n,74p,580b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+<d:/Programas/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb><d:/Programas/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><d:/Programas/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><d:/Programas/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
+pfb>
+Output written on Investigacion.pdf (5 pages, 311521 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
+ 40 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
