@@ -155,7 +155,7 @@ Los resultados obtenidos se muestran a continuación:
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[scale = .5]{tiempo}
+\includegraphics[width=1\linewidth]{tiempo}
 \caption{Para la toma del tiempo se utilizó la función omp\_get\_wtime() de la biblioteca omp.h}
 \end{figure}
 
@@ -168,7 +168,7 @@ Para el programa del Algoritmo de Dijkstra se obtuvo lo siguiente:
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[scale = .5]{speedup}
+\includegraphics[width=1\linewidth]{speedup}
 \end{figure}
 
 En los tres procesadores se observa que el valor del speedup es menor que la unidad. Esto quiere decir que el algoritmo ejecutado en forma paralela no presenta una mejora en cuanto al tiempo de ejecución, al contrario, hace que el programa se ejecute más lento.
@@ -180,7 +180,7 @@ Los cálculos de eficiencias obtenidos fueron los siguientes:
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[scale = .5]{eficiencia}
+\includegraphics[width=1\linewidth]{eficiencia}
 \end{figure}
 
 Si nuestros procesadores se utilizan de forma eficiente se espera que el tiempo de ejecución dedicado por cada procesador por el número de procesadores sea igual al tiempo de ejecución en un sólo procesador. Esto quiere decir que se requiere un valor cercano a la unidad. En base a los resultados obtenidos, se puede observar que están más cercanos a 0 que a 1, por lo que el programa no tiene una buena eficiencia.
@@ -192,7 +192,7 @@ Los resultados se muestran a continuación:
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[scale = .5]{fraccion}
+\includegraphics[width=1\linewidth]{fraccion}
 \end{figure}
 
 Después de obtener las métricas de desempeño podemos afirmar que el programa no presenta una mejora en cuanto a su versión secuencial. En un apartado posterior se hará un análisis más profundo de esto.
@@ -217,7 +217,7 @@ Empezaremos comparando a la versión paralela consigo misma. n la Figura 2 se pu
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.9\linewidth]{hil1v4.png}
+\includegraphics[width=1\linewidth]{hil1v4.png}
   \caption{Ejecución en segundos usando 3 diferentes procesadores.}
 \end{figure}
 
@@ -226,7 +226,7 @@ Ahora, si comparamos el rendimiento de la versión serial contra la paralela (us
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.9\linewidth]{tablas.png}
+\includegraphics[width=1\linewidth]{tablas.png}
   \caption{Rendimiento de programa serial vs paralelo.}
 \end{figure}
 
@@ -283,8 +283,9 @@ En consecuencia, se puede decir que este algoritmo no es óptimo en su versión 
  \bibitem{Li} \textsc{Li J. (2020)} 
  	\textit{Programming on Parallel Machines}, Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing (STOC ’20), Chicago,  USA, 14 pages. https://doi.org/10.1145/3357713.3384268.
 
-Panitanarak, T. Madduri, K. "Performance Analysis of Single-source Shortest Path Algorithms on Distributed-memory Systems", Department of Computer Science and Engineering, The Pennsylvania State University
-University Park, PA, USA
+ \bibitem{Panitanarak} \textsc{Panitanarak, T. Madduri, K.} 
+ 	\textit{Performance Analysis of Single-source Shortest Path Algorithms on Distributed-memory Systems}, Department of Computer Science and Engineering, The Pennsylvania State University
+University, USA.
 
  \bibitem{Li} \textsc{Li J. (2020)} 
  	\textit{Programming on Parallel Machines}, Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing (STOC ’20), Chicago,  USA, 14 pages. https://doi.org/10.1145/3357713.3384268.
@@ -294,7 +295,7 @@ University Park, PA, USA
 
 
  \bibitem{Mateti} \textsc{Mateti, P., Deo, N. (1982)} 
- 	\textit{arallel algorithms for the single source shortest path problem}, Computing 29, 31–49, https://doi.org/10.1007/BF02254849.
+ 	\textit{Parallel algorithms for the single source shortest path problem}, Computing 29, 31–49, https://doi.org/10.1007/BF02254849.
 
  \bibitem{Parhami} \textsc{Parhami B. (2002)} 
  	\textit{Introduction to Parallel Processing, Algorithms and Architectures}, Springer US, https://doi.org/10.1007/b116777.

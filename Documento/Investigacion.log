@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.15)  17 JAN 2021 21:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.15)  18 JAN 2021 10:37
 entering extended mode
 **./Investigacion.tex
 (Investigacion.tex
@@ -217,55 +217,35 @@ Package pdftex.def Info: ./imagenes//grafos5.jpg  used on input line 131.
 File: ./imagenes//tiempo.png Graphic file (type png)
 <use ./imagenes//tiempo.png>
 Package pdftex.def Info: ./imagenes//tiempo.png  used on input line 158.
-(pdftex.def)             Requested size: 473.76883pt x 202.75699pt.
-
-Overfull \hbox (113.76883pt too wide) in paragraph at lines 158--159
- [][] 
- []
-
-[10 <./imagenes//tiempo.png>]
-<./imagenes//speedup.png, id=50, 951.555pt x 196.735pt>
+(pdftex.def)             Requested size: 360.0pt x 154.06635pt.
+<./imagenes//speedup.png, id=45, 951.555pt x 196.735pt>
 File: ./imagenes//speedup.png Graphic file (type png)
 <use ./imagenes//speedup.png>
 Package pdftex.def Info: ./imagenes//speedup.png  used on input line 171.
-(pdftex.def)             Requested size: 475.77634pt x 98.36725pt.
-
-Overfull \hbox (115.77634pt too wide) in paragraph at lines 171--172
- [][] 
- []
-
+(pdftex.def)             Requested size: 360.0pt x 74.42986pt.
+ [10 <./imagenes//tiempo.png>]
 <./imagenes//eficiencia.png, id=51, 948.54375pt x 192.72pt>
 File: ./imagenes//eficiencia.png Graphic file (type png)
 <use ./imagenes//eficiencia.png>
 Package pdftex.def Info: ./imagenes//eficiencia.png  used on input line 183.
-(pdftex.def)             Requested size: 474.2707pt x 96.35976pt.
-
-Overfull \hbox (114.2707pt too wide) in paragraph at lines 183--184
- [][] 
- []
-
-[11 <./imagenes//speedup.png> <./imagenes//eficiencia.png>]
-<./imagenes//fraccion.png, id=57, 952.55875pt x 192.72pt>
+(pdftex.def)             Requested size: 360.0pt x 73.14319pt.
+<./imagenes//fraccion.png, id=52, 952.55875pt x 192.72pt>
 File: ./imagenes//fraccion.png Graphic file (type png)
 <use ./imagenes//fraccion.png>
 Package pdftex.def Info: ./imagenes//fraccion.png  used on input line 195.
-(pdftex.def)             Requested size: 476.27821pt x 96.35976pt.
-
-Overfull \hbox (116.27821pt too wide) in paragraph at lines 195--196
- [][] 
- []
-
-[12 <./imagenes//fraccion.png>]
-<./imagenes//hil1v4.png, id=62, 1044.90375pt x 647.41875pt>
+(pdftex.def)             Requested size: 360.0pt x 72.83441pt.
+ [11 <./imagenes//speedup.png> <./imagenes//eficiencia.png>]
+<./imagenes//hil1v4.png, id=58, 1044.90375pt x 647.41875pt>
 File: ./imagenes//hil1v4.png Graphic file (type png)
 <use ./imagenes//hil1v4.png>
 Package pdftex.def Info: ./imagenes//hil1v4.png  used on input line 220.
-(pdftex.def)             Requested size: 323.9978pt x 200.74713pt.
+(pdftex.def)             Requested size: 360.0pt x 223.05347pt.
+ [12 <./imagenes//fraccion.png>]
 <./imagenes//tablas.png, id=63, 1204.5pt x 803.0pt>
 File: ./imagenes//tablas.png Graphic file (type png)
 <use ./imagenes//tablas.png>
 Package pdftex.def Info: ./imagenes//tablas.png  used on input line 229.
-(pdftex.def)             Requested size: 323.9978pt x 215.99196pt.
+(pdftex.def)             Requested size: 360.0pt x 239.99515pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -321,35 +301,35 @@ Underfull \hbox (badness 4940) in paragraph at lines 283--285
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 []\OT1/cmr/m/sc/10.95 Li J. (2020) \OT1/cmr/m/it/10.95 Pro-gram-ming on Pa-ra-l
 lel Ma-chi-nes\OT1/cmr/m/n/10.95 , Pro-cee-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 \OT1/cmr/m/n/10.95 dings of the 52nd An-nual ACM SI-GACT Sym-po-sium on
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 289--291
+Underfull \hbox (badness 4940) in paragraph at lines 290--292
 \OT1/cmr/m/n/10.95 Theory of Com-pu-ting (STOC '20), Chica-go, USA, 14 pa-ges.
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 296--298
-[]\OT1/cmr/m/sc/10.95 Mateti, P., Deo, N. (1982) \OT1/cmr/m/it/10.95 ara-llel a
-l-go-rithms for the
+Underfull \hbox (badness 7667) in paragraph at lines 297--299
+[]\OT1/cmr/m/sc/10.95 Mateti, P., Deo, N. (1982) \OT1/cmr/m/it/10.95 Pa-ra-llel
+ al-go-rithms for the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--298
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
 \OT1/cmr/m/it/10.95 sin-gle sour-ce shor-test path pro-blem\OT1/cmr/m/n/10.95 ,
  Com-pu-ting 29, 31{49,
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 305--307
+Underfull \hbox (badness 1097) in paragraph at lines 306--308
 \OT1/cmr/m/n/10.95 pu-ter Scien-ce, vol 1450. Sprin-ger, Ber-lin, Hei-del-berg.
  https://doi-
  []
@@ -363,10 +343,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2963 strings out of 479799
- 45732 string characters out of 2869722
- 335544 words of memory out of 3000000
- 19929 multiletter control sequences out of 15000+200000
+ 2962 strings out of 479799
+ 45715 string characters out of 2869722
+ 335549 words of memory out of 3000000
+ 19928 multiletter control sequences out of 15000+200000
  540906 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,7n,76p,864b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -381,7 +361,7 @@ Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Sofia/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users
 /Sofia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 
-Output written on Investigacion.pdf (17 pages, 707285 bytes).
+Output written on Investigacion.pdf (17 pages, 706923 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
