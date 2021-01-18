@@ -25,15 +25,15 @@ La ventaja de esto es que múltiples procesadores pueden cumplir una tarea o pue
 \paragraph{}
 El problema de camino más corto es uno de los problemas fundamentales de optimización y uno de los más notorios en modelos computacionales paralelos debido a su amplio campo de aplicaciones. En este proyecto, abordarenos este problema haciendo uso del algoritmo de Dijkstra con la objetivo de analizar primero la definición y funcionaiento del algoritmo, tomando en cuenta sus características, psudocódigo, ventajas y analizando en particular la implementación paralela. Finalmente se hará una comparación entre las dos versiones para encontrar cuál resulta más eficiente al hacer pruebas con OpenMP en el lenguaje C. 
 \section{Antecendentes}
-Aunque hay una gran cantidad de estudios teóricos reportados sobre el procesamiento de grafos como Arjomandi en 1975 [], Benltey en 1980[], en el pasado no muchos de ellos consideraron el algoritmo para la ruta más corta. Uno de los pocos a encontrar fue realizado en 1980 por Deo et al. [] en el que se diseñó, codificó y se ejecutó un algoritmo paralelo en una computadora con arquitectura MIMD. 
+Aunque hay una gran cantidad de estudios teóricos reportados sobre el procesamiento de grafos como Arjomandi en 1975 [1], Benltey en 1980[2], en el pasado no muchos de ellos consideraron el algoritmo para la ruta más corta. Uno de los pocos a encontrar fue realizado en 1980 por Deo et al. [3] en el que se diseñó, codificó y se ejecutó un algoritmo paralelo en una computadora con arquitectura MIMD. 
 
 \paragraph*{}
-En los últimos 20 años, sin embargo, se ha explorado mucho más. Una de estas implementaciones fue realizada por Fang Zhou Lin y Nan Zhao [] en 1999. Respecto a aplicaciones, en 2012, Songmin Jia, Xiaolin Yin, y Xiuzhi Li [] propuesieron una técnica de Localización y Construcción de Mapas Simulánea (SLAM por sus siglas en inglés \textit {Simultaneous Localization and Map Building}) que resulta eficiente para la navegación de robots móbiles interiores basada en OpenMP. 
-El código implementado para realizar las prubas fue tomado de...
+En los últimos 20 años, sin embargo, se ha explorado mucho más. Una de estas implementaciones fue realizada por Fang Zhou Lin y Nan Zhao [4] en 1999. Respecto a aplicaciones, en 2012, Songmin Jia, Xiaolin Yin, y Xiuzhi Li [5] propuesieron una técnica de Localización y Construcción de Mapas Simulánea (SLAM por sus siglas en inglés \textit {Simultaneous Localization and Map Building}) que resulta eficiente para la navegación de robots móbiles interiores basada en OpenMP. 
+El código implementado para realizar las prubas fue tomado de Programming on Parallel Machines de Matloff [6].
 
 
 \section{Programando en OpenMP}
-OpenMP es una API (interfaz de programa de aplicación) que se utiliza para dirigir explícitamente el paralelismo de memoria compartida. OpenMP se introdujo en 1997 para estandarizar las extensiones de programación para máquinas de memoria compartida. OpenMP se ha convertido en el entorno elegido por muchos, de los practicantes de este tipo de programación. Consiste en un conjunto de directivas que se agregan al código C / C ++ / FORTRAN que manipula los subprocesos, sin que el programador tenga que lidiar con los subprocesos directamente. De esta manera obtenemos "lo mejor de ambos mundos": el verdadero paralelismo de los hilos (no preventivos) y el placer de evitar las molestias de la programación de hilos []. 
+OpenMP es una API (interfaz de programa de aplicación) que se utiliza para dirigir explícitamente el paralelismo de memoria compartida. OpenMP se introdujo en 1997 para estandarizar las extensiones de programación para máquinas de memoria compartida. OpenMP se ha convertido en el entorno elegido por muchos, de los practicantes de este tipo de programación. Consiste en un conjunto de directivas que se agregan al código C / C ++ / FORTRAN que manipula los subprocesos, sin que el programador tenga que lidiar con los subprocesos directamente. De esta manera obtenemos "lo mejor de ambos mundos": el verdadero paralelismo de los hilos (no preventivos) y el placer de evitar las molestias de la programación de hilos. 
 
 \paragraph{}
 OpenMP proporciona una API "basada en directivas". Esto significa que hay instrucciones especiales de preprocesador conocidas como pragmas. Los pragmas generalmente se agregan a un sistema para permitir comportamientos que no son parte de la especificación C básica. Los compiladores que no apoyan los pragmas son libres de omitirlos. Esto permite que un programa que utiliza los pragmas se ejecute en cualquier plataforma. Entonces, en principio, si tiene un programa OpenMP cuidadosamente escrito, se puede compilar y ejecutar en cualquier sistema con un compilador C, independientemente de
@@ -226,10 +226,88 @@ Ahora, si comparamos el rendimiento de la versión serial contra la paralela (us
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.9\linewidth]{svp.png}
+\includegraphics[width=0.9\linewidth]{tablas.png}
   \caption{Rendimiento de programa serial vs paralelo.}
 \end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{tablas1.png}
+  \caption{Rendimiento de programa paralelo con diferente cantidad de nodos.}
+\end{figure}
+
+
 \paragraph{}
-En consecuencia, se puede decir que este algoritmo no es óptimo en su versión paralela. A pesar de segmentar las tareas entre hilos, la versión serial resulta ser la mejor opción. Algo importante a notar aquí es que esto fue probado en programa de OpenMP y que el lenguaje, así como API, de implementación juega un rol en el rendimiento final. Además, sería posible hacer modificaciones al código utilizado con el fin de hacer su ejecución más rápida.
+Algo importante a notar aquí es que el tiempo de ejecución depende del tamaño del problema, es decir, cuando tenemos pocos nodos resulta poco conveniente implementar paralelismo. Mientras más crece la camtidad de nodos con la que se va a trabajar, la versión paralela del algoritmo se vuelve más eficiente, como lo indican las tablas de la Figura 9. 
+\par 
+Hay diferentes factores que pudieran estar favoreciendo este comportamiento. El primero de ellos es la sección crítica presente en el código. Es neesaria por que en cada iteración, los hilos calculan sus valores de distancia mínima local a un cierto vértice, y luego actualizan los valores globales. Dado que la actualización debe ser atómica (sólo puede ser realizada por un hilo), esto provoca cierta serialización del programa.
+\par
+Otro factor podría que es posible que ocurra False Sharing durante la ejecución. Esto se refiere a que cuando una parte del programa intenta acceder en el ciclo a datos que no serán alterados pero que comparten bloques de caché con datos que sí lo son, como en este caso las variables de distancia,el protocolo de caché puede forzar al programa a recargar todo el bloque a pesar de no ser extrictamente necesario, lo cual ocasiona esperas en la memoria además de perder eficiencia de procesador.
+
+\par
+Por último, se puede considerar el balance de carga, particularmente en el ciclo. En realidad no se está definiendo una partición específica de las iteraciones que le corresponden a cada hilo del programa. Por un lado, las particiones grandes son buenas, debido a que hay menos sobrecarga: cada vez que un hilo termina un fragmento, debe pasar por la sección crítica,que serializa nuestro programa paralelo y, por lo tanto, ralentiza las cosas. Por otro lado, si los tamaños de las particiones son grandes, entonces hacia el final del trabajo, algunos hilos pueden estar trabajando en sus últimos fragmentos mientras que otros han terminado y ahora están inactivos, renunciando así a una posible mejora de la velocidad.
+\par
+Por lo tanto, sería beneficioso tener trozos grandes al comienzo de la ejecución, para reducir la sobrecarga, pero trozos más pequeños al final. 
+Esto se puede hacer usando la cláusula guided o schedule.
+
+\paragraph{}
+En consecuencia, se puede decir que este algoritmo no es óptimo en su versión paralela dependiendo de qué se busque, a pesar de segmentar las tareas entre hilos, la versión serial resulta ser la mejor opción cuando se tienen pocos nodos. Todo lo mencionado anteriormente contribuye a que el rendimiento del programa no sea óptimo con pocos nodos, cuando esta cantidad aumenta, la distribución de tareas a través del paralelismo es finalmente suficiente para compensar el tiempo perdido en crear y sincronizar todos los hilos. Algo importante a notar aquí es que esto fue probado en programa de OpenMP y que el lenguaje, así como API, de implementación juega un rol en el rendimiento final. Además, sería posible hacer modificaciones al código utilizado con el fin de hacer su ejecución más rápida.
+
+\begin{thebibliography}{x}
+ \bibitem{Arjomandi} \textsc{Arjomandi, E.(1975).}
+ \textit{A study of parallelism in graph theory},Doctoral thesis, TR 86, Dept. of Computer Science, University of Toronto.
+ 
+ \bibitem{Bentley} \textsc{Bentley, J. L.(1979).}
+ 	\textit{A tree machine for searching problems.},Proc. International Conference on Parallel Processing, pp. 257-266. 	
+ 
+  \bibitem{Deo} \textsc{Deo, N., Pang, C. Y.(1980).}. \textit{Shortest path algorithms: taxonomy and annotation}, Computer Science Department, Washington State University, Pullman, Wash., Technical Report No. CS-80-057.
+ 	
+ 	 \bibitem{Lin} \textsc{Lin F. Z., Zhao N.(1999).} 
+ 	\textit{Parallel Implementation of Dijkstra's Algorithm}, pp COP5570.	   
+ \bibitem{Jia} \textsc{Jia S., Yin X., Li X.(2012)}
+ \textit{Mobile Robot Parallel PF-SLAM},IEEE, International Conference on Robotics and Biomimetics.  
+
+ \bibitem{Matloff} \textsc{Matloff, N.} 
+ 	\textit{Programming on Parallel Machines}, University of California, Davis, http://heather.cs.ucdavis.edu/mat-loff/158/PLN/ParProcBook.pdf.
+ 
+ \bibitem{Caola} \textsc{Caola, H., Wangb, F., Xin Fang, Tu H. L. (2012).} 
+ 	\textit{OpenMP Parallel Optimal Path Algorithm and Its Performance Analysis}, Jun Shi World Congress on Software Engineering, DOI 10.1109.
+ 	
+ \bibitem{Jasika} \textsc{Jasika N., Alispahic N., Elma A., Ilvana K., Elma L. y Nosovic, N. (2012).} 
+ 	\textit{Faster Parallel Algorithm for Approximate Shortest Path}, Proceedings of the 35th International Convention MIPRO, Opatija, pp. 1811-1815.
+ 	
+ \bibitem{Li} \textsc{Li J. (2020)} 
+ 	\textit{Programming on Parallel Machines}, Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing (STOC ’20), Chicago,  USA, 14 pages. https://doi.org/10.1145/3357713.3384268.
+
+
+ \bibitem{Li} \textsc{Li J. (2020)} 
+ 	\textit{Programming on Parallel Machines}, Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing (STOC ’20), Chicago,  USA, 14 pages. https://doi.org/10.1145/3357713.3384268.
+
+Panitanarak, T. Madduri, K. "Performance Analysis of Single-source Shortest Path Algorithms on Distributed-memory Systems", Department of Computer Science and Engineering, The Pennsylvania State University
+University Park, PA, USA
+
+ \bibitem{Li} \textsc{Li J. (2020)} 
+ 	\textit{Programming on Parallel Machines}, Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing (STOC ’20), Chicago,  USA, 14 pages. https://doi.org/10.1145/3357713.3384268.
+
+ \bibitem{Stefano} \textsc{Stefano G., Petricola A., Zaroliagis C.(2006)} 
+ 	\textit{On the implementation of parallel shortest path algorithms on a supercomputer}, Proceedings of ISPA’06, pp. 406-417.
+
+
+ \bibitem{Mateti} \textsc{Mateti, P., Deo, N. (1982)} 
+ 	\textit{arallel algorithms for the single source shortest path problem}, Computing 29, 31–49, https://doi.org/10.1007/BF02254849.
+
+ \bibitem{Parhami} \textsc{Parhami B. (2002)} 
+ 	\textit{Introduction to Parallel Processing, Algorithms and Architectures}, Springer US, https://doi.org/10.1007/b116777.
+
+ \bibitem{Thomas} \textsc{Thomas H. Spencer. (1991)} 
+ 	\textit{More time-work tradeoffs for parallel graph algorithms}, Proceedings of the third annual ACM symposium on Parallel algorithms and architectures (SPAA '91). Association for Computing Machinery, New York, NY, USA, pp 81–93, https://doi.org/10.1145/113379.113387.
+
+ \bibitem{Crauser} \textsc{Crauser A., Mehlhorn K., Meyer U., Sanders P. (1998).} 
+ 	\textit{ A parallelization of Dijkstra's shortest path algorithm}, Mathematical Foundations of Computer Science 1998, Lecture Notes in Computer Science, vol 1450. Springer, Berlin, Heidelberg. https://doi-org.pbidi.unam.mx:2443/10.1007/BFb0055823.
+
+
+ \bibitem{Kulkarni} \textsc{Kulkarni P. ,Pathare S. (2014)} 
+ 	\textit{Performance Analysis of Parallel Algorithm over Sequential using OpenMP}, IOSR Journal of Computer Engineering. 16. 58-62. 10.9790/0661-162105862. 
+
+\end{thebibliography}
 \end{document}
