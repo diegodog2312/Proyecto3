@@ -17,19 +17,20 @@ Algoritmo de Dijkstra\\
 \maketitle{}
 
 \section{Introducción}
-El campo de la arquitectura digital de las computadores ha crecido exponencialmente en los últimos años. De manera simultánea, la investigación sobre diferentes formas de concurrencia, desde la segmentación estándar hasta paralelismo puro y la creación de estructuras que puedan soportar modelos de programación para estos sistemas han permito que la capacidad y productividad del hardware continue creciendo también. Los cumputadores modernos se vuelven cada vez más eficientes al contar con más procesadores, núcleos y memoria. Esta una tendencia que se espere que continue en los próximos años. 
+El campo de la arquitectura digital de las computadores ha crecido exponencialmente en los últimos años. De manera simultánea, la investigación sobre diferentes formas de concurrencia, desde la segmentación estándar hasta paralelismo puro y la creación de estructuras que puedan soportar modelos de programación para estos sistemas han permito que la capacidad y productividad del hardware continue creciendo también. Los computadores modernos se vuelven cada vez más eficientes al contar con más procesadores, núcleos y memoria. Esta una tendencia que se espere que continue en los próximos años. 
 
 \paragraph{}
-La ventaja de esto es que múltiples procesadores pueden cumplir una tarea o pueden dividirla para que más de un hilo trabaje sobre ella, cuyo resultado óptimo sería ejecutarla en menos tiempo que si sólo se hiciera de manera secuencial. Una de las formas de medir este rendimiento es a través de la complejidad que tiene, en el caso de un algoritmo paralelo se mide por el tiempo y el número de procesadores que se requieren. EL nuevo reto es orientar el diseño computacional a la simplicidad y alto rendimiento, pero conservando un bajo costo y necesidad de poder, el paralelsimo juega un papel importante en esto. 
+La ventaja de esto es que múltiples procesadores pueden cumplir una tarea o pueden dividirla para que más de un hilo trabaje sobre ella, cuyo resultado óptimo sería ejecutarla en menos tiempo que si sólo se hiciera de manera secuencial. Una de las formas de medir este rendimiento es a través de la complejidad que tiene, en el caso de un algoritmo paralelo se mide por el tiempo y el número de procesadores que se requieren. EL nuevo reto es orientar el diseño computacional a la simplicidad y alto rendimiento, pero conservando un bajo costo y necesidad de poder, el paralelismo juega un papel importante en esto. 
 
 \paragraph{}
-El problema de camino más corto es uno de los problemas fundamentales de optimización y uno de los más notorios en modelos computacionales paralelos debido a su amplio campo de aplicaciones. En este proyecto, abordarenos este problema haciendo uso del algoritmo de Dijkstra con la objetivo de analizar primero la definición y funcionaiento del algoritmo, tomando en cuenta sus características, psudocódigo, ventajas y analizando en particular la implementación paralela. Finalmente se hará una comparación entre las dos versiones para encontrar cuál resulta más eficiente al hacer pruebas con OpenMP en el lenguaje C. 
-\section{Antecendentes}
+El problema de camino más corto es uno de los problemas fundamentales de optimización y uno de los más notorios en modelos computacionales paralelos debido a su amplio campo de aplicaciones. En este proyecto, abordaremos este problema haciendo uso del algoritmo de Dijkstra con la objetivo de analizar primero la definición y funcionamiento del algoritmo, tomando en cuenta sus características, pseudocódigo, ventajas y analizando en particular la implementación paralela. Finalmente se hará una comparación entre las dos versiones para encontrar cuál resulta más eficiente al hacer pruebas con OpenMP en el lenguaje C. 
+
+\section{Antecedentes}
 Aunque hay una gran cantidad de estudios teóricos reportados sobre el procesamiento de grafos como Arjomandi en 1975 [1], Benltey en 1980[2], en el pasado no muchos de ellos consideraron el algoritmo para la ruta más corta. Uno de los pocos a encontrar fue realizado en 1980 por Deo et al. [3] en el que se diseñó, codificó y se ejecutó un algoritmo paralelo en una computadora con arquitectura MIMD. 
 
-\paragraph*{}
-En los últimos 20 años, sin embargo, se ha explorado mucho más. Una de estas implementaciones fue realizada por Fang Zhou Lin y Nan Zhao [4] en 1999. Respecto a aplicaciones, en 2012, Songmin Jia, Xiaolin Yin, y Xiuzhi Li [5] propuesieron una técnica de Localización y Construcción de Mapas Simulánea (SLAM por sus siglas en inglés \textit {Simultaneous Localization and Map Building}) que resulta eficiente para la navegación de robots móbiles interiores basada en OpenMP. 
-El código implementado para realizar las prubas fue tomado de Programming on Parallel Machines de Matloff [6].
+\paragraph{}
+En los últimos 20 años, sin embargo, se ha explorado mucho más. Una de estas implementaciones fue realizada por Fang Zhou Lin y Nan Zhao [4] en 1999. Respecto a aplicaciones, en 2012, Songmin Jia, Xiaolin Yin, y Xiuzhi Li [5] propusieron una técnica de Localización y Construcción de Mapas Simultánea (SLAM por sus siglas en inglés \textit {Simultaneous Localization and Map Building}) que resulta eficiente para la navegación de robots móviles interiores basada en OpenMP. 
+El código implementado para realizar las pruebas fue tomado de Programming on Parallel Machines de Matloff [6].
 
 
 \section{Programando en OpenMP}
@@ -45,14 +46,15 @@ comienza un hilo para cada núcleo disponible.
 
 \paragraph{}
 La ventaja de tener varios núcleos es que podríamos usar estos núcleos para extraer el paralelismo a nivel de subprocesos en un programa y, por lo tanto, aumentar el rendimiento de un solo programa. Se han realizado muchas investigaciones en esta área. Algunas de las ventajas de OpenMP incluyen: buen rendimiento, portátil (es compatible con una gran cantidad de compiladores), requiere muy poco esfuerzo de programación y permite que el programa ser paralelos incrementalmente.
-\section{El algortimo de Dijsktra}
+
+\section{El algoritmo de Dijsktra}
 El algoritmo de Dijkstra es uno de los principales usados para encontrar las rutas más cortas en un gráfico ponderado por bordes y / o vértices. Dado un vértice de inicio en particular, encuentra el camino más corto desde todos los demás vértices del gráfico, incluido el destino deseado. 
 
 \paragraph{}
 Suponiendo que el camino más corto de s a t en la gráfica G pasa a través del nodo intermedio x. Es claro que esta ruta debe contener la ruta más corta de s - x como un prefijo, de lo contrario, podríamos acortar la ruta s - t usando el prefijo s - x. Por lo tanto tenemos que encontrar primero la ruta más corta de s a x antes de encontrar la más corta entre s y t. 
 
 \paragraph{}
-Este algoritmo procede a hacer ciclos en los que en cada uno de ellos calcula la ruta más corta de x a un nuevo vértice. Esto sugiere una estrategia dinámica. La ruta más corta de s a sí mimo es trivial a menos que hayan pesos negativos. Una vez que se determina la ruta a un nodo x, se checan todos los adyacentes a x para ver si hay un ,mejor camino desde s a un otro vértice atravesando a x.
+Este algoritmo procede a hacer ciclos en los que en cada uno de ellos calcula la ruta más corta de x a un nuevo vértice. Esto sugiere una estrategia dinámica. La ruta más corta de s a sí mimo es trivial a menos que hayan pesos negativos. Una vez que se determina la ruta a un nodo x, se revisan todos los adyacentes a x para ver si hay un ,mejor camino desde s a un otro vértice atravesando a x.
 
 \paragraph{}
 Esto se puede explicar como referencia los siguientes pasos:
@@ -60,11 +62,11 @@ Esto se puede explicar como referencia los siguientes pasos:
 \begin{enumerate}
 \item Seleccionar vértice de partida, es decir un origen.
 \item Marcar el punto de partida como el punto de inicio.
-\item Determinar los caminos especiales desde el nodo de partida, esdecir, el de inicio.
+\item Determinar los caminos especiales desde el nodo de partida, es decir, el de inicio.
 \item Camino especial es aquel que solo puede trazarse a través de los nodos o vértices ya marcados.
 \item Para  cada  nodo  no  marcado,  se  debe  determinar  si  es  mejor  usar  el  camino  especial antes calculado o si es mejor usar el nuevo camino especial que resulte al marcar este nuevo nodo.
 \item Para  seleccionar  un  nuevo  nodo  no  marcado  como  referencia,  deberá  tomarse  aquel cuyo camino especial para llegar a él es el mínimo, por ejemplo si anteriormente marqué el  nodo  o  vértice  2,  el  cual  tiene  dos  nodos  adyacentes  3  y  4  cuyo  peso  en  la  arista corresponde a 10 y 5 respectivamente, se tomará como nuevo nodo de partida el 4, ya que el peso de la arista o camino es menor.
-\item Cada camino mínimo corresponde a la suma de los pesos de las aristas que forman el caminopara  ir  del  nodo  principal  al  resto  de  nodos,  pasando  únicamente  por  caminos especiales, es decir nodos marcados.
+\item Cada camino mínimo corresponde a la suma de los pesos de las aristas que forman el camino para  ir  del  nodo  principal  al  resto  de  nodos,  pasando  únicamente  por  caminos especiales, es decir nodos marcados.
 \end{enumerate}
 
 \begin{figure}
@@ -72,7 +74,7 @@ Esto se puede explicar como referencia los siguientes pasos:
   \caption{Algoritmo de Dijstra.}
 \end{figure}
 
-\par
+\paragraph{}
 La complejidad del algoritmo de Dijkstra en su versión serial es de $O(n^2)$ si no se usa una cola de prioridad, como es el caso de las implementaciones realizadas para este proyecto. Es igualmente costos calcular la ruta más corta de un vértice s a cualquier otro vértice como lo es calcular la ruta más corta de cualquier vértice a s. Por esto, se puede decir que el nodo origen no afecta el rendimiento. 
 
 \paragraph{}
@@ -171,6 +173,7 @@ Para el programa del Algoritmo de Dijkstra se obtuvo lo siguiente:
 \includegraphics[width=1\linewidth]{speedup}
 \end{figure}
 
+\par
 En los tres procesadores se observa que el valor del speedup es menor que la unidad. Esto quiere decir que el algoritmo ejecutado en forma paralela no presenta una mejora en cuanto al tiempo de ejecución, al contrario, hace que el programa se ejecute más lento.
 
 \subsubsection{Eficiencia}
@@ -183,6 +186,7 @@ Los cálculos de eficiencias obtenidos fueron los siguientes:
 \includegraphics[width=1\linewidth]{eficiencia}
 \end{figure}
 
+\par
 Si nuestros procesadores se utilizan de forma eficiente se espera que el tiempo de ejecución dedicado por cada procesador por el número de procesadores sea igual al tiempo de ejecución en un sólo procesador. Esto quiere decir que se requiere un valor cercano a la unidad. En base a los resultados obtenidos, se puede observar que están más cercanos a 0 que a 1, por lo que el programa no tiene una buena eficiencia.
 
 \subsubsection{Fracción serial}
@@ -195,7 +199,11 @@ Los resultados se muestran a continuación:
 \includegraphics[width=1\linewidth]{fraccion}
 \end{figure}
 
-Después de obtener las métricas de desempeño podemos afirmar que el programa no presenta una mejora en cuanto a su versión secuencial. En un apartado posterior se hará un análisis más profundo de esto.
+\par
+La fracción serial contenida en un código paralelo degrada el rendimiento. Si sumamos el valor de la fracción serial más el valor de la fracción paralela del código debemos de obtener un valor de uno. Esto quiere decir que el valor de la fracción serial debe ser menor que la unidad, cosa que no pasa con los resultados obtenidos.
+\par
+Después de obtener las métricas de desempeño podemos afirmar que el programa no presenta una mejora en cuanto a su versión secuencial. En un apartado posterior se hará un análisis más profundo de esto. 
+
 
 \subsection{Formas de comunicación}
 Una región paralela es ejecutada por varios hilos que acceden a los mismos datos compartidos, por lo que es necesaria la sincronización para proteger las regiones críticas o evitar la condición de carrera. OpenMP ofrece varios constructores que se pueden utilizar para la sincronización y coordinación de hilos dentro de una región paralela. El constructor critical especifica una región crítica que solo puede ser ejecutada por un único hilo a la vez. 
@@ -238,11 +246,11 @@ Ahora, si comparamos el rendimiento de la versión serial contra la paralela (us
 
 
 \paragraph{}
-Algo importante a notar aquí es que el tiempo de ejecución depende del tamaño del problema, es decir, cuando tenemos pocos nodos resulta poco conveniente implementar paralelismo. Mientras más crece la camtidad de nodos con la que se va a trabajar, la versión paralela del algoritmo se vuelve más eficiente, como lo indican las tablas de la Figura 9. 
+Algo importante a notar aquí es que el tiempo de ejecución depende del tamaño del problema, es decir, cuando tenemos pocos nodos resulta poco conveniente implementar paralelismo. Mientras más crece la cantidad de nodos con la que se va a trabajar, la versión paralela del algoritmo se vuelve más eficiente, como lo indican las tablas de la Figura 9. 
 \par 
-Hay diferentes factores que pudieran estar favoreciendo este comportamiento. El primero de ellos es la sección crítica presente en el código. Es neesaria por que en cada iteración, los hilos calculan sus valores de distancia mínima local a un cierto vértice, y luego actualizan los valores globales. Dado que la actualización debe ser atómica (sólo puede ser realizada por un hilo), esto provoca cierta serialización del programa.
+Hay diferentes factores que pudieran estar favoreciendo este comportamiento. El primero de ellos es la sección crítica presente en el código. Es necesaria por que en cada iteración, los hilos calculan sus valores de distancia mínima local a un cierto vértice, y luego actualizan los valores globales. Dado que la actualización debe ser atómica (sólo puede ser realizada por un hilo), esto provoca cierta serialización del programa.
 \par
-Otro factor podría que es posible que ocurra False Sharing durante la ejecución. Esto se refiere a que cuando una parte del programa intenta acceder en el ciclo a datos que no serán alterados pero que comparten bloques de caché con datos que sí lo son, como en este caso las variables de distancia,el protocolo de caché puede forzar al programa a recargar todo el bloque a pesar de no ser extrictamente necesario, lo cual ocasiona esperas en la memoria además de perder eficiencia de procesador.
+Otro factor podría que es posible que ocurra False Sharing durante la ejecución. Esto se refiere a que cuando una parte del programa intenta acceder en el ciclo a datos que no serán alterados pero que comparten bloques de caché con datos que sí lo son, como en este caso las variables de distancia,el protocolo de caché puede forzar al programa a recargar todo el bloque a pesar de no ser estrictamente necesario, lo cual ocasiona esperas en la memoria además de perder eficiencia de procesador.
 
 \par
 Por último, se puede considerar el balance de carga, particularmente en el ciclo. En realidad no se está definiendo una partición específica de las iteraciones que le corresponden a cada hilo del programa. Por un lado, las particiones grandes son buenas, debido a que hay menos sobrecarga: cada vez que un hilo termina un fragmento, debe pasar por la sección crítica,que serializa nuestro programa paralelo y, por lo tanto, ralentiza las cosas. Por otro lado, si los tamaños de las particiones son grandes, entonces hacia el final del trabajo, algunos hilos pueden estar trabajando en sus últimos fragmentos mientras que otros han terminado y ahora están inactivos, renunciando así a una posible mejora de la velocidad.
@@ -252,6 +260,14 @@ Esto se puede hacer usando la cláusula guided o schedule.
 
 \paragraph{}
 En consecuencia, se puede decir que este algoritmo no es óptimo en su versión paralela dependiendo de qué se busque, a pesar de segmentar las tareas entre hilos, la versión serial resulta ser la mejor opción cuando se tienen pocos nodos. Todo lo mencionado anteriormente contribuye a que el rendimiento del programa no sea óptimo con pocos nodos, cuando esta cantidad aumenta, la distribución de tareas a través del paralelismo es finalmente suficiente para compensar el tiempo perdido en crear y sincronizar todos los hilos. Algo importante a notar aquí es que esto fue probado en programa de OpenMP y que el lenguaje, así como API, de implementación juega un rol en el rendimiento final. Además, sería posible hacer modificaciones al código utilizado con el fin de hacer su ejecución más rápida.
+
+\section{Conclusiones}
+Como suele ser el caso de la programación paralela, la mera paralelización de un programa no necesariamente lo hará más rápido. Operaciones como regiones críticas, barreras, etc. vuelven secuencial a un programa que de otro modo sería paralelo, le quita gran parte de su velocidad. Además, existen problemas de transacciones de coherencia de caché, false sharing, etc.
+\par
+El algoritmo en versión secuencial es más rápido cuando se tiene un número pequeño de nodos, pero si aumentamos este mismo número, la versión paralela empieza a tener mejores resultados y se obtiene un speedup de 1.3.
+\par
+La razón de esto se debe a diversos factores. Primero hay que recordar que la complejidad del algoritmo secuencial de Dijkstra es de $O(n^2)$; esto quiere decir que mientras más nodos tengamos, el algoritmo tarda más en su ejecución. Por otro lado, en la versión paralela, al aumentar el tamaño del grafo cada hilo trabaja de forma más independiente con sus nodos asignados, por lo que el tiempo de comunicación y sincronización entre hilos se vuelve algo más insignificante. 
+
 
 \begin{thebibliography}{x}
  \bibitem{Arjomandi} \textsc{Arjomandi, E.(1975).}
@@ -279,20 +295,12 @@ En consecuencia, se puede decir que este algoritmo no es óptimo en su versión 
  \bibitem{Li} \textsc{Li J. (2020)} 
  	\textit{Programming on Parallel Machines}, Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing (STOC ’20), Chicago,  USA, 14 pages. https://doi.org/10.1145/3357713.3384268.
 
-
- \bibitem{Li} \textsc{Li J. (2020)} 
- 	\textit{Programming on Parallel Machines}, Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing (STOC ’20), Chicago,  USA, 14 pages. https://doi.org/10.1145/3357713.3384268.
-
  \bibitem{Panitanarak} \textsc{Panitanarak, T. Madduri, K.} 
  	\textit{Performance Analysis of Single-source Shortest Path Algorithms on Distributed-memory Systems}, Department of Computer Science and Engineering, The Pennsylvania State University
 University, USA.
 
- \bibitem{Li} \textsc{Li J. (2020)} 
- 	\textit{Programming on Parallel Machines}, Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing (STOC ’20), Chicago,  USA, 14 pages. https://doi.org/10.1145/3357713.3384268.
-
  \bibitem{Stefano} \textsc{Stefano G., Petricola A., Zaroliagis C.(2006)} 
  	\textit{On the implementation of parallel shortest path algorithms on a supercomputer}, Proceedings of ISPA’06, pp. 406-417.
-
 
  \bibitem{Mateti} \textsc{Mateti, P., Deo, N. (1982)} 
  	\textit{Parallel algorithms for the single source shortest path problem}, Computing 29, 31–49, https://doi.org/10.1007/BF02254849.
@@ -306,9 +314,20 @@ University, USA.
  \bibitem{Crauser} \textsc{Crauser A., Mehlhorn K., Meyer U., Sanders P. (1998).} 
  	\textit{ A parallelization of Dijkstra's shortest path algorithm}, Mathematical Foundations of Computer Science 1998, Lecture Notes in Computer Science, vol 1450. Springer, Berlin, Heidelberg. https://doi-org.pbidi.unam.mx:2443/10.1007/BFb0055823.
 
-
- \bibitem{Kulkarni} \textsc{Kulkarni P. ,Pathare S. (2014)} 
+ \bibitem{Kulkarni} \textsc{Kulkarni P. ,Pathare S.  (2014)} 
  	\textit{Performance Analysis of Parallel Algorithm over Sequential using OpenMP}, IOSR Journal of Computer Engineering. 16. 58-62. 10.9790/0661-162105862. 
+ 	
+\bibitem{Rauber} \textsc{Rauber, T. , Rünger, G. (2010)}
+	\textit{Parallel Programming: for Multicore and Cluster Systems},  Heidelberg: Springer.
+	
+\bibitem{Pardo}\textsc{Pardo,F. (2004)}
+	\textit{Arquitectura e ingeniería de los computadores},  Valencia: Universidad de Valencia.
+
+\bibitem{Jiménez}\textsc{Jiménez, D. (2013)}
+	\textit{Introducción a las arquitecturas paralelas}, Universitat Oberta de Catalunya.
+	
+\bibitem{Pacheco}\textsc{Pacheco, P. (2011)}
+	\textit{An Introduction to Parallel Programming}, MA, USA: Morgan Kaufmann.
 
 \end{thebibliography}
 \end{document}
