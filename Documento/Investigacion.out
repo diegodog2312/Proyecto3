@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.2}{Objetivos}{}% 2
+\BOOKMARK [1][-]{section.3}{Antecedentes}{}% 3
+\BOOKMARK [1][-]{section.4}{Programando en OpenMP}{}% 4
+\BOOKMARK [1][-]{section.5}{El algoritmo de Dijsktra}{}% 5
+\BOOKMARK [1][-]{section.6}{Algoritmo utilizado y su implementaci\363n }{}% 6
+\BOOKMARK [1][-]{section.7}{Paralelizaci\363n del Algoritmo}{}% 7
+\BOOKMARK [2][-]{subsection.7.1}{Nivel de paralelismo}{section.7}% 8
+\BOOKMARK [2][-]{subsection.7.2}{M\351tricas de desempe\361o}{section.7}% 9
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Speedup}{subsection.7.2}% 10
+\BOOKMARK [3][-]{subsubsection.7.2.2}{Eficiencia}{subsection.7.2}% 11
+\BOOKMARK [3][-]{subsubsection.7.2.3}{Fracci\363n serial}{subsection.7.2}% 12
+\BOOKMARK [2][-]{subsection.7.3}{Formas de comunicaci\363n}{section.7}% 13
+\BOOKMARK [2][-]{subsection.7.4}{Granularidad}{section.7}% 14
+\BOOKMARK [1][-]{section.8}{Pruebas}{}% 15
+\BOOKMARK [1][-]{section.9}{Conclusiones}{}% 16
+\BOOKMARK [1][-]{section.10}{Autoevaluaci\363n del equipo}{}% 17
+\BOOKMARK [1][-]{section.11}{Enlace al video}{}% 18

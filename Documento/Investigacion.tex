@@ -1,6 +1,8 @@
 \documentclass[11pt]{article}
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
+\usepackage{hyperref}
+
 \graphicspath{ {./imagenes/} }
 \usepackage[section]{placeins}
 
@@ -28,7 +30,7 @@ El problema de camino más corto es uno de los problemas fundamentales de optimi
 \section{Objetivos}
 \begin{enumerate}
 \item Que el alumno ponga en práctica los conceptos de la programación paralela a través de la implementación de un algoritmo paralelo, así mismo desarrolle su capacidad para responder preguntas acerca de un concepto analizado a profundidad.
-\item Analizar el programa del algoritmo de Dijkstra, tanto en la versión secuencial, como en la versión paralela para determinar cuál es más eficiente en base a las métricas de desempeño.
+\item Analizar el programa del algoritmo de Dijkstra, tanto en la versión secuencial, como en la versión paralela para determinar cuál es más eficiente con base en las métricas de desempeño.
 
 \end{enumerate}
 
@@ -276,7 +278,15 @@ El algoritmo en versión secuencial es más rápido cuando se tiene un número p
 La razón de esto se debe a diversos factores. Primero hay que recordar que la complejidad del algoritmo secuencial de Dijkstra es de $O(n^2)$; esto quiere decir que mientras más nodos tengamos, el algoritmo tarda más en su ejecución. Por otro lado, en la versión paralela, al aumentar el tamaño del grafo cada hilo trabaja de forma más independiente con sus nodos asignados, por lo que el tiempo de comunicación y sincronización entre hilos se vuelve algo más insignificante. 
 
 \section{Autoevaluación del equipo}
-10 alv
+Con base en que este trabajo cumple con los requisitos solicitados, todos los integrantes del equipo 8 concuerdan en que la calificación merecida sea 10.
+\par 
+Aunque elegimos un algoritmo relativamente complicado, logramos analizar en su versión paralela y secuencial para determinar el más eficiente con ayuda de las métricas de desempaño. Además de esto, mejoramos la implementación en la que nos basamos corrigiendo una condición de carrera no detectada por el autor original.
+\par 
+Con este proyecto, cada integrante del equipo adquirió la habilidad para analizar cualquier programa secuencial y determinar si su paralelización valdría la pena o no.
+
+\section{Enlace al video}
+\par
+\url{https://www.youtube.com/watch?reload=9&v=9JaEwUEoVRI&feature=youtu.be}
 
 \begin{thebibliography}{x}
  \bibitem{Arjomandi} \textsc{Arjomandi, E.(1975).}
