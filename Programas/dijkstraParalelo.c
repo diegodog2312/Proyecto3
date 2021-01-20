@@ -46,9 +46,8 @@ void init(int ac, char **av){
         notdone[i] = 1;   //Ningun verrtice está revisado aún
         mind[i] = ohd[i]; //La distancia mínima encontrada hasta ahora es
     }
-    //sobre escribe el 15 al nodo e
-    ohd[nv * 0 + 4] = 30;
-    ohd[4 * nv] = 30;
+    
+
 }
 
 void dowork(){

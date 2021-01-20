@@ -45,26 +45,21 @@ void init(int ac, char **av){
 void dowork()
 {
     int step, // whole procedure goes nv steps
-        mymv, // vertex which attains that value
         i;
-    unsigned mymd; // min value found by this thread
+   // min value found by this thread
 
     for (step = 0; step < nv; step++){
         // closest in its group, then we find overall closest
         md = largeint;
         mv = 0;
-        mymd = largeint;
+
         for (i = 1; i < nv; i++){
-            if (notdone[i] && mind[i] < mymd){
-                mymd = ohd[i];
-                mymv = i;
+            if (notdone[i] && mind[i] < md){
+                md = ohd[i];
+                mv = i;
             }            
         }
-        // update overall min if mine is smaller
-        if (mymd < md){
-            md = mymd;
-            mv = mymv;
-        }
+       
         // mark new vertex as done
         notdone[mv] = 0;
         // now update ohd
