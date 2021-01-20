@@ -2,7 +2,7 @@
 \BOOKMARK [1][-]{section.2}{Objetivos}{}% 2
 \BOOKMARK [1][-]{section.3}{Antecedentes}{}% 3
 \BOOKMARK [1][-]{section.4}{Programando en OpenMP}{}% 4
-\BOOKMARK [1][-]{section.5}{El algoritmo de Dijsktra}{}% 5
+\BOOKMARK [1][-]{section.5}{El algoritmo de Dijkstra}{}% 5
 \BOOKMARK [1][-]{section.6}{Algoritmo utilizado y su implementaci\363n }{}% 6
 \BOOKMARK [1][-]{section.7}{Paralelizaci\363n del Algoritmo}{}% 7
 \BOOKMARK [2][-]{subsection.7.1}{Nivel de paralelismo}{section.7}% 8
@@ -14,5 +14,7 @@
 \BOOKMARK [2][-]{subsection.7.4}{Granularidad}{section.7}% 14
 \BOOKMARK [1][-]{section.8}{Pruebas}{}% 15
 \BOOKMARK [1][-]{section.9}{Conclusiones}{}% 16
-\BOOKMARK [1][-]{section.10}{Autoevaluaci\363n del equipo}{}% 17
-\BOOKMARK [1][-]{section.11}{Enlace al video}{}% 18
+\BOOKMARK [2][-]{subsection.9.1}{Diego N\372\361ez}{section.9}% 17
+\BOOKMARK [2][-]{subsection.9.2}{Sof\355a Cabello}{section.9}% 18
+\BOOKMARK [1][-]{section.10}{Autoevaluaci\363n del equipo}{}% 19
+\BOOKMARK [1][-]{section.11}{Enlace al video}{}% 20
